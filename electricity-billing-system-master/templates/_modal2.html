@@ -1,0 +1,70 @@
+<div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="form-inline d-flex justify-content-between p-3">
+			  	<h5 class="modal-title" id="ModalCenterTitle">{{ _('Change Password') }}</h5>
+			  	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				  </button>
+			</div>
+			<div class="modal-body">
+				<div class="form-inline justify-content-center">
+					<label>Current Password : &nbsp;</label>
+					<input type="password" class="form-control" id="current_password" placeholder="{{ _('Current Password') }}">
+				</div>
+				<br>
+				<div class="form-inline justify-content-center">
+					<label>New Password &nbsp;&nbsp;&nbsp;&nbsp; : &nbsp;</label>
+					<input type="password" class="form-control" id="new_password" placeholder="{{ _('New Password') }}">
+				</div>
+				<br>
+				<div class="form-inline justify-content-center">
+					<label>Confirm Password: &nbsp;</label>
+					<input type="password" class="form-control" id="confirm_password" placeholder="{{ _('Confirm Password') }}">
+				</div>
+			</div>
+			<div class="form-inline d-flex justify-content-end p-3">	
+				<button type="button" class="btn btn-outline-dark" style="margin-right: 8px;" id="change_password">{{ _('Save changes') }}</button>
+				<button type="button" class="btn btn-outline-danger" data-dismiss="modal">{{ _('Close') }}</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">		
+        <div id="_modal" class="alert alert-dark alert-dismissible fade show" role="alert">
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        {{ message }}
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+            <span id="msg"></span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>	
+    </div>
+</div>
+<div class="modal fade" id="payModal" tabindex="-1" role="dialog" aria-labelledby="ModalPay" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="form-inline d-flex justify-content-between p-3">
+				<h5 class="modal-title" id="ModalPay">{{ _('Pay') }}</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="form-inline justify-content-center">
+					<label>{{ _('Do You Want To Make A Payment') }}</label>
+				</div>
+			</div>
+			<div class="form-inline d-flex justify-content-end p-3">	
+				<button type="button" class="btn btn-outline-dark" style="margin-right: 8px;" id="paybill">{{ _('Pay') }}</button>
+				<button type="button" class="btn btn-outline-danger" data-dismiss="modal">{{ _('Close') }}</button>
+			</div>
+		</div>
+	</div>
+</div>

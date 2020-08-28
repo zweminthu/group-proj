@@ -1,0 +1,99 @@
+{% extends "link.html" %}
+{% include "_modal.html" %}
+{% block body %}
+<div class="h-100 container-fluid logbody">
+    <div class="row h-100 justify-content-center align-items-center">
+        <form class="col-sm-3" method="POST">
+            {{ form.hidden_tag() }}
+            <div class="container mwidth1 border shadow">
+                <h3 style="text-align: center;">{{ _('Create a new account') }}</h3>
+                <h6 style="text-align: right;"><a href="/lan?lan=en&re={{ request.path }}">{{ _('EN') }}</a> | <a href="/lan?lan=my&re={{ request.path }}">{{ _('MY') }}</a></h6>
+                <div class="form-inline justify-content-center">
+                    <label for="inp" class="inp">
+                        {{ form.username() }}
+                        <span class="label">{{ _('Username') }}</span>
+                        <span class="border"></span>
+                    </label>
+                </div>
+                <br>
+                <div class="form-inline justify-content-center">
+                    <label for="inp" class="inp">
+                        {{ form.email() }}
+                        <span class="label">{{ _('Email') }}</span>
+                        <span class="border"></span>
+                    </label>
+                </div>
+                <br>
+                <div class="form-inline justify-content-center">
+                    <label for="inp" class="inp">
+                        {{ form.password() }}
+                        <span class="label">{{ _('Password') }}</span>
+                        <span class="border"></span>
+                    </label>
+                </div>
+                <br>
+                <div class="form-inline justify-content-center">
+                    <label for="inp" class="inp">
+                        {{ form.re_password() }}
+                        <span class="label">{{ _('Re-type Password') }}</span>
+                        <span class="border"></span>
+                    </label>
+                </div>
+                <br>
+                <div class="form-inline justify-content-center">
+                    <label for="inp" class="inp">
+                        {{ form.dob() }}
+                        <span class="label">{{ _('Date of Birth') }}</span>
+                        <span class="border"></span>
+                    </label>
+                </div>
+                <br>
+                <div class="form-inline justify-content-center">
+                    <label for="inp" class="inp">
+                        {{ form.phone_no() }}
+                        <span class="label">{{ _('Phone Number') }}</span>
+                        <span class="border"></span>
+                    </label>
+                </div>
+                <br>
+                <div class="form-inline justify-content-center">
+                    <label for="inp" class="inp">
+                        {{ form.meter_id() }}
+                        <span class="label">{{ _('Meter ID') }}</span>
+                        <span class="border"></span>
+                    </label>
+                </div>
+                <br>
+                <div class="form-inline justify-content-center">
+                    <label for="inp" class="inp">
+                        {{ form.address() }}
+                        <span class="label">{{ _('Address') }}</span>
+                        <span class="border"></span>
+                    </label>
+                </div>
+                <br>
+                <div class="text-center">
+                    {{ form.submit() }}
+                </div>
+                <br>
+                <div class="form-inline justify-content-between">
+                    <a href="{{ url_for('reset_password_req') }}">{{ _('Forget Password?') }}</a>
+                    <a href="{{ url_for('login') }}">{{ _('Already have account?') }}</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+	$(document).ready(function() {
+		var messages = "{{ get_flashed_messages() }}";
+		"{% for error in form.errors %}"
+			var errors = "{{ error }}";
+	  	"{% endfor %}"
+		
+    	if (typeof messages != 'undefined' && messages != '[]' || typeof errors != 'undefined' && errors != '[]') {
+        	$("#myModal").modal('toggle');
+		};
+	});
+</script>
+{% endblock %}

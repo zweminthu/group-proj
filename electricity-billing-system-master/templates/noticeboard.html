@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% include "_modal2.html" %}
+{% block body %}
+<div class="container mainbd">
+    <!-- <form> -->
+        <div class="container bguser border p-3">
+            <h5>{{ _('Noticeboard') }}</h5>
+            <hr>
+            {% for n in ntb %}
+            <div id="{{ n[0] }}" class="container border shadow-sm p-3">
+                <div class="form-inline">
+                    <div class="mr-auto">
+                        <h5>{{ n[1] }}</h5>
+                    </div>
+                    <span>{{ n[4] }}</span>
+                </div>
+                <span>{{ n[2] }}</span>
+                <p>{{ n[3] }}</p>
+                {% if 'admin_id' in session: %}
+                <div class="form-inline d-flex justify-content-end p-2">
+                    <a href="{{ url_for('noticeboardedit', _method='POST', id=n[0]) }}" class="btn btn-outline-dark" style="margin-right: 8px;">{{ _('Edit') }}</a>
+                    <!-- <input type="button" class="btn btn-outline-dark edit" id="{{ n[0] }}" style="margin-right: 8px;" value="{{ _('Edit') }}"> -->
+                    <input type="button" class="btn btn-outline-danger delete" id="{{ n[0] }}" value="{{ _('Delete') }}">
+                </div>
+                {% endif %}
+            </div>
+            <br>
+            {% endfor %}
+        </div>
+    <!-- </form> -->
+</div>
+<script>
+    $(document).ready(function() {
+		var messages = "{{ get_flashed_messages() }}";
+		
+    	if (typeof messages != 'undefined' && messages != '[]') {
+        	$("#myModal").modal('toggle');
+		};
+    });
+    $('.delete').click(
+        function(){
+            $.ajax({
+                type: 'POST',
+                url: '/delnoti',
+                data: {id:$(this).attr('id')},
+                dataType: 'json',
+                success: function(){
+                    window.location.reload(true);
+                }
+            })
+        }
+    )
+</script>
+{% endblock %}

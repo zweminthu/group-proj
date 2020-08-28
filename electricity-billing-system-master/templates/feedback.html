@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% include "_modal2.html" %}
+{% block body %}
+<div class="container mainbd">
+    <div class="accordion" id="accordionExample">
+        {% for sugg in suggs %}
+        <div class="card">
+            <div class="card-header form-inline" id="heading{{ sugg[0] }}">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed btnlink" type="button" data-toggle="collapse" data-target="#collapse{{ sugg[0] }}" aria-expanded="true" aria-controls="collapse{{ sugg[0] }}">
+                        {{ _('From : ') }}<span>{{ sugg[7] }}</span>
+                    </button>
+                </h5>
+                <h5 class="mb-0 ml-auto"><small>{{ sugg[5] }}</small></h5>
+            </div>
+            <div id="collapse{{ sugg[0] }}" class="collapse show" aria-labelledby="heading{{ sugg[0] }}" data-parent="#accordionExample">
+                <div class="card-body">
+                    <ul style="list-style-type:none">
+                        <li>{{ _('Friendliness: ') }}{{ sugg[1] }}</li>
+                        <li>{{ _('Accuracy: ') }}{{ sugg[2] }}</li>
+                        <li>{{ _('Usefulness: ') }}{{ sugg[3] }}</li>
+                        <li>{{ _('Will use in future: ') }}{{ sugg[4] }}</li>
+                        <li>{{ sugg[6] }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

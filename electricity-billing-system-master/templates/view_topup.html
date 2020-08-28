@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="container mainbd">
+    <h5>{{ _('Wallet Shop') }}</h5>
+    <br>
+    <div class="form-inline">
+        <div class="dropdown">
+            <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                {{ _('Select Wallet Amount') }}
+            </button>
+            <div id="select_amount" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" value="">{{ _('Select Amount') }}</a>
+                <a class="dropdown-item" value="0">0</a>
+                {% for m in money %}
+                    <a class="dropdown-item" value="{{ m }}">{{ m }}</a>
+                {% endfor %}
+            </div>
+        </div>
+        <input type="button" class="btn btn-link btnlink ml-auto" id="generate" value="{{ _('Generate New Topup Codes') }}">
+    </div>
+    <br>
+    <div class="container">
+        <table class="table table-striped text-center">
+            <thead>
+                <tr>
+                    <th>{{ _('Topup Code') }}</th>
+                    <th>{{ _('Money') }}</th>
+                    <th>{{ _('Sold') }}</td>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>   
+    </div>
+</div>
+<script>
+    $('#generate').click(
+        function(){
+            $.ajax({
+                url:'/generate',
+                success:function(data){
+                    alert(data.success);
+                }
+            })
+        }
+    )
+    function get_topup(m){
+        $.ajax({
+            url:'/get_topup',
+            data:{money:m},
+            dataType:'json',
+            success:function(data){
+                $("table tbody").empty();
+                for(t in data.get_topup){
+                    $('table tbody').append("<tr><td>"+data.get_topup[t][0]+"</td><td>"+data.get_topup[t][1]+"</td><td>"+data.get_topup[t][2]+"</td></tr>");
+                }
+            }
+        })
+    }
+    $(document).ready(function(){
+        get_topup("");
+        $('#select_amount a').on('click', function(){
+            select_money = $(this).text();
+            get_topup(select_money);
+        });
+    });
+</script>
+{% endblock %}

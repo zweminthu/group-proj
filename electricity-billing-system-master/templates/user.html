@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% include "_modal2.html" %}
+{% block body %}
+<div class="container mainbd">
+    <div class="container form-inline">
+        <div class="form-group has-search mr-auto">
+            <span class="fa fa-search form-control-feedback"></span>
+            <input type="text" id="s_name" class="form-control" placeholder="{{ _('Search') }}">
+        </div>
+        <span>
+            {{ _('Total Users - ') }}<span id="t_user"></span>{{ _(' Users') }}
+        </span>
+    </div>
+    <br>
+    <div class="container">
+        <table class="table table-striped text-center">
+            <thead>
+                <tr>
+                    <th>{{ _('Username') }}</th>
+                    <th>{{ _('Credits') }}</th>
+                    <th>{{ _('Meter ID') }}</th>
+                    <th>{{ _('Online Status') }}</th>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        var messages = "{{ get_flashed_messages() }}";
+		
+    	if (typeof messages != 'undefined' && messages != '[]') {
+        	$("#myModal").modal('toggle');
+        };
+        window.setInterval(function(){
+            s_name = $('#s_name').val();
+            load_data(s_name);
+        }, 1000);
+        load_data();
+        function load_data(query)
+        {
+            $.ajax({
+                type: "POST",
+                url:"/search",
+                data:{searchUSER: query},
+                dataType: "json",
+                success:function(data)
+                {
+                    $("table tbody").empty();
+                    for(user in data.users){
+                        if(data.users[user][5]==null){
+                            data.users[user][5] = "Not Available"
+                        }
+                        if(data.users[user][6]==null){
+                            data.users[user][6] = "Offline"
+                        }
+                        $('table tbody').append("<tr><td>"+data.users[user][1]+"</td><td>"+data.users[user][4]+
+                            "</td><td>"+data.users[user][5]+"</td><td>"+data.users[user][6]+"</td><td><a href='/detail/"+
+                            data.users[user][0]+"' class='btn btn-outline-dark'>View</a></td></tr>");
+                    }
+                    $('#t_user').text(data.t_user);
+                }
+            });
+        }
+        $('#s_name').keyup(function(){
+            var search = $(this).val();
+            if(search != '')
+            {
+                load_data(search);
+            }
+            else
+            {
+                load_data();
+            }
+        });
+    });     
+</script>
+{% endblock %}

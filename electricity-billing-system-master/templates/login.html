@@ -1,0 +1,51 @@
+{% extends "link.html" %}
+{% include "_modal.html" %}
+{% block body %}
+<div class="h-100 container-fluid logbody">
+    <div class="row h-100 justify-content-center align-items-center">
+        <form class="col-sm-3" method="POST">
+            {{ form.hidden_tag() }}
+            <div class="container mwidth border shadow">
+                <h3 style="text-align: center;">{{ _('Welcome to EBS') }}</h3>
+                <h6 style="text-align: right;"><a href="/lan?lan=en&re={{ request.path }}">{{ _('EN') }}</a> | <a href="/lan?lan=my&re={{ request.path }}">{{ _('MY') }}</a></h6>
+                <div class="form-inline justify-content-center">
+                    <label for="inp" class="inp">
+                        {{ form.email() }}
+                        <span class="label">{{ _('Enter Email') }}</span>
+                        <span class="border"></span>
+                    </label>
+                </div>
+                <br>
+                <div class="form-inline justify-content-center">
+                    <label for="inp" class="inp">
+                        {{ form.password() }}
+                        <span class="label">{{ _('Enter Password') }}</span>
+                        <span class="border"></span>
+                    </label>
+                </div>
+                <br>
+                <div class="text-center">
+                    {{ form.submit() }}
+                </div>
+                <br>
+                <div class="form-inline justify-content-between">
+                    <a href="{{ url_for('reset_password_req') }}">{{ _('Forget Password?') }}</a>
+                    <a href="{{ url_for('register') }}">{{ _('Register Account') }}</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script>
+	$(document).ready(function() {
+		var messages = "{{ get_flashed_messages() }}";
+		"{% for error in form.errors %}"
+			var errors = "{{ error }}";
+	  	"{% endfor %}"
+		
+    	if (typeof messages != 'undefined' && messages != '[]' || typeof errors != 'undefined' && errors != '[]') {
+        	$("#myModal").modal('toggle');
+		};
+	});
+</script>
+{% endblock %}

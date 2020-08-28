@@ -1,0 +1,1129 @@
+# Translations template for PROJECT.
+# Copyright (C) 2019 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-09-18 15:38+0630\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: forms.py:6
+msgid "Invalid password length"
+msgstr ""
+
+#: forms.py:9 forms.py:17 templates/register.html:22
+msgid "Email"
+msgstr ""
+
+#: forms.py:10 forms.py:15 templates/register.html:30
+#: templates/reset_password.html:14
+msgid "Password"
+msgstr ""
+
+#: forms.py:11
+msgid "Login"
+msgstr ""
+
+#: forms.py:14
+msgid "User Name"
+msgstr ""
+
+#: forms.py:16 templates/_modal2.html:23
+msgid "Confirm Password"
+msgstr ""
+
+#: forms.py:16 forms.py:30
+msgid "Password doesn't match."
+msgstr ""
+
+#: forms.py:18 templates/register.html:46
+msgid "Date of Birth"
+msgstr ""
+
+#: forms.py:19 templates/register.html:54
+msgid "Phone Number"
+msgstr ""
+
+#: forms.py:20 templates/adminhome.html:17 templates/adminhome.html:82
+#: templates/register.html:62 templates/user.html:21
+msgid "Meter ID"
+msgstr ""
+
+#: forms.py:21 templates/register.html:70
+msgid "Address"
+msgstr ""
+
+#: forms.py:22
+msgid "Register"
+msgstr ""
+
+#: forms.py:26
+msgid "Request Reset Link"
+msgstr ""
+
+#: forms.py:31 templates/_modal2.html:5 templates/adminhome.html:62
+msgid "Change Password"
+msgstr ""
+
+#: server.py:123
+msgid "Please Login!"
+msgstr ""
+
+#: server.py:138 server.py:165
+msgid "Wrong Email Address or Password."
+msgstr ""
+
+#: server.py:141
+msgid "Please confirm your email address first"
+msgstr ""
+
+#: server.py:199
+msgid "Account already exists."
+msgstr ""
+
+#: server.py:220
+msgid "Please confirm your email address."
+msgstr ""
+
+#: server.py:230 server.py:268
+msgid "Token expired!"
+msgstr ""
+
+#: server.py:236
+msgid "Email confirmed"
+msgstr ""
+
+#: server.py:253
+msgid "Account does not exists"
+msgstr ""
+
+#: server.py:258
+msgid "Please confirm email address to login!"
+msgstr ""
+
+#: server.py:277
+msgid "Your account is now active! Try Login!"
+msgstr ""
+
+#: server.py:366 server.py:367
+msgid "Successfully Edited"
+msgstr ""
+
+#: server.py:393 server.py:462 server.py:645
+msgid "Success"
+msgstr ""
+
+#: server.py:403 server.py:418
+msgid "Successfully Deleted"
+msgstr ""
+
+#: server.py:431
+msgid "User is now registered as shop"
+msgstr ""
+
+#: server.py:687
+msgid "Bought"
+msgstr ""
+
+#: server.py:710
+msgid "Error"
+msgstr ""
+
+#: server.py:730
+msgid "Successfully Paid"
+msgstr ""
+
+#: templates/_modal2.html:13
+msgid "Current Password"
+msgstr ""
+
+#: templates/_modal2.html:18
+msgid "New Password"
+msgstr ""
+
+#: templates/_modal2.html:27
+msgid "Save changes"
+msgstr ""
+
+#: templates/_modal2.html:28 templates/_modal2.html:66 templates/base.html:138
+msgid "Close"
+msgstr ""
+
+#: templates/_modal2.html:54 templates/_modal2.html:65
+msgid "Pay"
+msgstr ""
+
+#: templates/_modal2.html:61
+msgid "Do You Want To Make A Payment"
+msgstr ""
+
+#: templates/aboutus.html:5 templates/base.html:66
+msgid "About Us"
+msgstr ""
+
+#: templates/aboutus.html:6
+msgid ""
+"Thank you for using our Electricity Billing System. Our system is "
+"designed to enable your feel \n"
+"        free to manage electricity supply and billing from our system to "
+"collect and control all utility \n"
+"        materials such as Pole, Meter and Phone as well. "
+msgstr ""
+
+#: templates/aboutus.html:29
+msgid "Previous"
+msgstr ""
+
+#: templates/aboutus.html:33
+msgid "Next"
+msgstr ""
+
+#: templates/aboutus.html:37
+msgid "Is the system helpful for modern society?"
+msgstr ""
+
+#: templates/aboutus.html:38
+msgid ""
+"Smoother and easier payment processes for electricity billing.\n"
+"                More systematic data storage and processing styles plus "
+"easy to configure the database.\n"
+"                More accurate in electricity bill calculation.Save money "
+"for transportation and time.\n"
+"                Produce consistent invoices after transaction."
+msgstr ""
+
+#: templates/aboutus.html:48
+msgid "Objective Views"
+msgstr ""
+
+#: templates/aboutus.html:49
+msgid ""
+"From the objective view, electricity billing system is \n"
+"                    to be able to manage the electricity, maintain the "
+"connections and store \n"
+"                    electricity bill and keep all the information of "
+"customers."
+msgstr ""
+
+#: templates/aboutus.html:57
+msgid "System"
+msgstr ""
+
+#: templates/aboutus.html:58
+msgid ""
+"The process of electricity billing system automates the \n"
+"                    traditional transaction process, calculates the "
+"charges of electricity bill and \n"
+"                    evaluates the penalties and charges for customers who"
+" has been in an electricity connection."
+msgstr ""
+
+#: templates/aboutus.html:66
+msgid "Offer"
+msgstr ""
+
+#: templates/aboutus.html:67
+msgid ""
+"We have tried to do as much as the work for you, through \n"
+"                    the design, payment processor combination and etc."
+msgstr ""
+
+#: templates/aboutus.html:74
+msgid "Customer Service Survey"
+msgstr ""
+
+#: templates/aboutus.html:75
+msgid "Please take a moment to fill out this survey"
+msgstr ""
+
+#: templates/aboutus.html:77
+msgid "Overall satisfaction of service"
+msgstr ""
+
+#: templates/aboutus.html:81 templates/aboutus.html:92
+#: templates/aboutus.html:120 templates/aboutus.html:148
+msgid "Very Satisfied"
+msgstr ""
+
+#: templates/aboutus.html:82 templates/aboutus.html:97
+#: templates/aboutus.html:125 templates/aboutus.html:153
+msgid "Satisfied"
+msgstr ""
+
+#: templates/aboutus.html:83 templates/aboutus.html:102
+#: templates/aboutus.html:130 templates/aboutus.html:158
+msgid "Neutral"
+msgstr ""
+
+#: templates/aboutus.html:84 templates/aboutus.html:107
+#: templates/aboutus.html:135 templates/aboutus.html:163
+msgid "Unsatisfied"
+msgstr ""
+
+#: templates/aboutus.html:85 templates/aboutus.html:112
+#: templates/aboutus.html:140 templates/aboutus.html:168
+msgid "Very Unsatisfied"
+msgstr ""
+
+#: templates/aboutus.html:89
+msgid "Friendliness"
+msgstr ""
+
+#: templates/aboutus.html:117
+msgid "Accuracy"
+msgstr ""
+
+#: templates/aboutus.html:145
+msgid "Usefulness"
+msgstr ""
+
+#: templates/aboutus.html:175
+msgid "Would you use our customer service in the future?"
+msgstr ""
+
+#: templates/aboutus.html:177 templates/aboutus.html:179
+msgid "Yes"
+msgstr ""
+
+#: templates/aboutus.html:183 templates/aboutus.html:185
+msgid "No"
+msgstr ""
+
+#: templates/aboutus.html:189 templates/aboutus.html:191
+msgid "Maybe"
+msgstr ""
+
+#: templates/aboutus.html:195
+msgid "How can we improve our service?"
+msgstr ""
+
+#: templates/aboutus.html:196
+msgid "Feedback Content"
+msgstr ""
+
+#: templates/aboutus.html:197
+msgid "Let us know what you want ..."
+msgstr ""
+
+#: templates/aboutus.html:199
+msgid "Send"
+msgstr ""
+
+#: templates/adminhome.html:9
+msgid "Previous Month Payment Status"
+msgstr ""
+
+#: templates/adminhome.html:14 templates/adminhome.html:81
+#: templates/adminhome.html:109 templates/detail.html:18
+#: templates/service.html:10 templates/service.html:56
+msgid "No."
+msgstr ""
+
+#: templates/adminhome.html:15 templates/register.html:14
+#: templates/user.html:19
+msgid "Username"
+msgstr ""
+
+#: templates/adminhome.html:16 templates/adminhome.html:83
+msgid "Balance"
+msgstr ""
+
+#: templates/adminhome.html:39
+msgid "Admin Info"
+msgstr ""
+
+#: templates/adminhome.html:63 templates/adminhome.html:135
+#: templates/noticeboard.html:21 templates/noticeboard.html:22
+#: templates/noticeboardedit.html:17
+msgid "Edit"
+msgstr ""
+
+#: templates/adminhome.html:76
+msgid "Payment Overdue Status"
+msgstr ""
+
+#: templates/adminhome.html:104 templates/detail.html:12
+msgid "Recent Activities"
+msgstr ""
+
+#: templates/adminhome.html:110 templates/detail.html:19
+msgid "Activity"
+msgstr ""
+
+#: templates/adminhome.html:111 templates/detail.html:20
+#: templates/userhome.html:76
+msgid "Date"
+msgstr ""
+
+#: templates/adminhome.html:112 templates/detail.html:21
+msgid "Time"
+msgstr ""
+
+#: templates/adminhome.html:141
+msgid "Confirm"
+msgstr ""
+
+#: templates/adminhome.html:188
+msgid "Password does not match"
+msgstr ""
+
+#: templates/adminhome.html:192
+msgid "Invalid Credential"
+msgstr ""
+
+#: templates/adminhome.html:196
+msgid "Password Successfully Updated"
+msgstr ""
+
+#: templates/base.html:3 templates/base.html:37 templates/link.html:1
+msgid "Electricity Billing System"
+msgstr ""
+
+#: templates/base.html:44
+msgid "Home"
+msgstr ""
+
+#: templates/base.html:44
+msgid "(current)"
+msgstr ""
+
+#: templates/base.html:48
+msgid "Language"
+msgstr ""
+
+#: templates/base.html:51
+msgid "English"
+msgstr ""
+
+#: templates/base.html:52
+msgid "Myanmar"
+msgstr ""
+
+#: templates/base.html:57
+msgid "Service"
+msgstr ""
+
+#: templates/base.html:60 templates/base.html:88
+msgid "Feedback"
+msgstr ""
+
+#: templates/base.html:63 templates/base.html:137
+msgid "Topup"
+msgstr ""
+
+#: templates/base.html:69 templates/faq.html:5
+msgid "FAQ"
+msgstr ""
+
+#: templates/base.html:73
+msgid "Shop"
+msgstr ""
+
+#: templates/base.html:79
+msgid "Users"
+msgstr ""
+
+#: templates/base.html:82
+msgid "Topup Cards"
+msgstr ""
+
+#: templates/base.html:85 templates/noticeboard.html:7
+#: templates/noticeboardedit.html:7
+msgid "Noticeboard"
+msgstr ""
+
+#: templates/base.html:92
+msgid "Reports"
+msgstr ""
+
+#: templates/base.html:95
+msgid "Monthly Report"
+msgstr ""
+
+#: templates/base.html:96
+msgid "Yearly Report"
+msgstr ""
+
+#: templates/base.html:100
+msgid "Update Database"
+msgstr ""
+
+#: templates/base.html:107
+msgid "Logout"
+msgstr ""
+
+#: templates/base.html:125
+msgid "Top Up"
+msgstr ""
+
+#: templates/base.html:132
+msgid "Topup Code :"
+msgstr ""
+
+#: templates/base.html:232
+msgid "2019 @ All Right Reserved"
+msgstr ""
+
+#: templates/base.html:234 templates/ruleregu.html:4
+msgid "Terms & Conditions"
+msgstr ""
+
+#: templates/base.html:234
+msgid "Privacy Policy"
+msgstr ""
+
+#: templates/base.html:247
+msgid "Topup Success"
+msgstr ""
+
+#: templates/detail.html:6
+msgid "Username : "
+msgstr ""
+
+#: templates/detail.html:7
+msgid "Email : "
+msgstr ""
+
+#: templates/detail.html:8 templates/receipt.html:10
+msgid "Address : "
+msgstr ""
+
+#: templates/detail.html:9
+msgid "Balance : "
+msgstr ""
+
+#: templates/detail.html:38
+msgid "Make Shop"
+msgstr ""
+
+#: templates/detail.html:44
+msgid "Are you sure you want to delete this user?"
+msgstr ""
+
+#: templates/faq.html:8
+msgid "1. How can I know my electricity usage?"
+msgstr ""
+
+#: templates/faq.html:12
+msgid "We implemented the graph that shows your electricity usage history."
+msgstr ""
+
+#: templates/faq.html:19
+msgid "2. How can I know important messages?"
+msgstr ""
+
+#: templates/faq.html:24
+msgid ""
+"Our system provides notice box to notify and remind any changes of the "
+"system such as bill due date, system changes, special offers and etc."
+msgstr ""
+
+#: templates/faq.html:31
+msgid "3. How much will I pay on my electricity bills? "
+msgstr ""
+
+#: templates/faq.html:35
+msgid ""
+"Depends on how much electricity your home or business uses and the bill "
+"will be paid for each month usage."
+msgstr ""
+
+#: templates/faq.html:42
+msgid "4. What Payment Options Do You Have?"
+msgstr ""
+
+#: templates/faq.html:46
+msgid ""
+"We offer e-wallet option for the bill payment to make electronic "
+"transactions."
+msgstr ""
+
+#: templates/faq.html:53
+msgid "5. If I forgot my password. Can you set up my account?"
+msgstr ""
+
+#: templates/faq.html:57
+msgid ""
+"Click the “Forgot Password” on the login screen, enter the answer to the "
+"security question. If the provided information is correct, a new password"
+" will be sent to the e-mail address associated to your account. "
+msgstr ""
+
+#: templates/faq.html:64
+msgid " 6. How can I calculate my total electricity usage cost?"
+msgstr ""
+
+#: templates/faq.html:68
+msgid ""
+"You can calculate the total electricity usage cost by clicking the "
+"“Calculate”. "
+msgstr ""
+
+#: templates/faq.html:75
+msgid "7. Where can I get my electricity bill receipt?"
+msgstr ""
+
+#: templates/faq.html:79
+msgid "In the “Get Receipt” page, you can get your receipt by downloading it."
+msgstr ""
+
+#: templates/faq.html:86
+msgid "8. How can I contact?"
+msgstr ""
+
+#: templates/faq.html:90
+msgid ""
+"Go to about us page and you can contact with us by calling provided phone"
+" numbers. "
+msgstr ""
+
+#: templates/faq.html:97
+msgid "9. What impacts do I have if I have a late payment?"
+msgstr ""
+
+#: templates/faq.html:101
+msgid ""
+"The overdue payment will be shown in home page and it will be suspended "
+"if you lack to pay for 3 months.  "
+msgstr ""
+
+#: templates/feedback.html:11
+msgid "From : "
+msgstr ""
+
+#: templates/feedback.html:19
+msgid "Friendliness: "
+msgstr ""
+
+#: templates/feedback.html:20
+msgid "Accuracy: "
+msgstr ""
+
+#: templates/feedback.html:21
+msgid "Usefulness: "
+msgstr ""
+
+#: templates/feedback.html:22
+msgid "Will use in future: "
+msgstr ""
+
+#: templates/login.html:9
+msgid "Welcome to EBS"
+msgstr ""
+
+#: templates/login.html:10 templates/register.html:10
+msgid "EN"
+msgstr ""
+
+#: templates/login.html:10 templates/register.html:10
+msgid "MY"
+msgstr ""
+
+#: templates/login.html:14 templates/reset_password_req.html:14
+msgid "Enter Email"
+msgstr ""
+
+#: templates/login.html:22
+msgid "Enter Password"
+msgstr ""
+
+#: templates/login.html:32 templates/register.html:80
+msgid "Forget Password?"
+msgstr ""
+
+#: templates/login.html:33
+msgid "Register Account"
+msgstr ""
+
+#: templates/noticeboard.html:23
+msgid "Delete"
+msgstr ""
+
+#: templates/noticeboardedit.html:9
+msgid "Topic Name Here"
+msgstr ""
+
+#: templates/noticeboardedit.html:12
+msgid "Brief Info Here"
+msgstr ""
+
+#: templates/noticeboardedit.html:14
+msgid "Main Contents Goes Here"
+msgstr ""
+
+#: templates/noticeboardedit.html:19
+msgid "Upload"
+msgstr ""
+
+#: templates/receipt.html:8
+msgid "Recipient name : "
+msgstr ""
+
+#: templates/receipt.html:9
+msgid "Date : "
+msgstr ""
+
+#: templates/receipt.html:11
+msgid "Meter ID : "
+msgstr ""
+
+#: templates/receipt.html:22
+msgid "Current Reading : "
+msgstr ""
+
+#: templates/receipt.html:26
+msgid "Previous Reading : "
+msgstr ""
+
+#: templates/receipt.html:30
+msgid "Difference Units : "
+msgstr ""
+
+#: templates/receipt.html:34
+msgid "Used Units : "
+msgstr ""
+
+#: templates/receipt.html:38
+msgid "Unit Charges : "
+msgstr ""
+
+#: templates/receipt.html:42
+msgid "Maintenance Cost : "
+msgstr ""
+
+#: templates/receipt.html:46
+msgid "Overdue Cost : "
+msgstr ""
+
+#: templates/receipt.html:50 templates/userhome.html:105
+msgid "Total Cost : "
+msgstr ""
+
+#: templates/receipt.html:59
+msgid "Download Receipt"
+msgstr ""
+
+#: templates/register.html:9
+msgid "Create a new account"
+msgstr ""
+
+#: templates/register.html:38 templates/reset_password.html:22
+msgid "Re-type Password"
+msgstr ""
+
+#: templates/register.html:81
+msgid "Already have account?"
+msgstr ""
+
+#: templates/reset_password.html:9
+msgid "Reset Password"
+msgstr ""
+
+#: templates/reset_password_req.html:9
+msgid "Reset Password Request"
+msgstr ""
+
+#: templates/ruleregu.html:7
+msgid "THE ELECTRICITY ACT 2014"
+msgstr ""
+
+#: templates/ruleregu.html:9
+msgid "Electricity Law 2014,"
+msgstr ""
+
+#: templates/ruleregu.html:10
+msgid "2014, Pyidaungsu Hluttaw Law No. (44)"
+msgstr ""
+
+#: templates/ruleregu.html:11
+msgid "1376, Tazaungmon, Day 5"
+msgstr ""
+
+#: templates/ruleregu.html:12
+msgid "2014, October, Day 27"
+msgstr ""
+
+#: templates/ruleregu.html:15
+msgid "Electric power rates and service charges"
+msgstr ""
+
+#: templates/ruleregu.html:16 templates/ruleregu.html:37
+#: templates/service.html:16 templates/service.html:62
+msgid "1"
+msgstr ""
+
+#: templates/ruleregu.html:16
+msgid ""
+"The relevant ministry shall, with the consent of the Union government, "
+"have the right to fix suitable electric power rates that are to be "
+"charged to the power consumer according to the region. The electric power"
+" rate may be changed from time to time."
+msgstr ""
+
+#: templates/ruleregu.html:17 templates/ruleregu.html:38
+#: templates/service.html:21 templates/service.html:66
+msgid "2"
+msgstr ""
+
+#: templates/ruleregu.html:17
+msgid ""
+"The governments of the regions, states, self-administered zones and self-"
+"administered divisions shall have the right to fix, after consultation "
+"with the relevant ministry, suitable electric power rates that are to be "
+"charged for electric power under their own management that is not "
+"acquired from the national grid the electric power rate may be changed "
+"from time to time."
+msgstr ""
+
+#: templates/ruleregu.html:19
+msgid "Administrative actions"
+msgstr ""
+
+#: templates/ruleregu.html:20
+msgid ""
+"The persons with the authority to issue a license to engage in "
+"electricity-related work under section 8 shall have the right to take any"
+" of the following administrative actions if the license holder breaches "
+"the conditions contained in the license or any order or directive issued "
+"by the relevant ministry or is convicted of having committed any offence "
+"under this law-"
+msgstr ""
+
+#: templates/ruleregu.html:21
+msgid "(a) Levying of a fine"
+msgstr ""
+
+#: templates/ruleregu.html:22
+msgid ""
+"(b) Suspension, for a limited time, of the license to engage in "
+"electricity-related work;"
+msgstr ""
+
+#: templates/ruleregu.html:23
+msgid "(c) Revocation of the license to engage in electricity-related work."
+msgstr ""
+
+#: templates/ruleregu.html:25
+msgid "Offences and penalties"
+msgstr ""
+
+#: templates/ruleregu.html:26
+msgid ""
+"Anyone convicted of having violated the prohibition under section shall "
+"be punished with a fine from minimum kyats 100,000 to maximum kyats "
+"500,000. If, after having been punished in this way, he is convicted of "
+"having continued to commit the offence, he shall additionally be punished"
+" with imprisonment from minimum 1 year to maximum 3 years."
+msgstr ""
+
+#: templates/ruleregu.html:27
+msgid ""
+"Any holder of a license to engage in electricity-related work convicted "
+"of having violated the prohibition under section 36 shall be punished "
+"with a fine from minimum kyats 100,000 to maximum kyats 500,000. If, "
+"after having been punished in this way, he is convicted of having "
+"continued to commit the offence, he shall additionally be punished with "
+"imprisonment from minimum 1 year to maximum 3 years."
+msgstr ""
+
+#: templates/ruleregu.html:29
+msgid "Mr. Thein Sein"
+msgstr ""
+
+#: templates/ruleregu.html:30
+msgid "Republic of the Union Myanmar"
+msgstr ""
+
+#: templates/ruleregu.html:33
+msgid "Rules and Regulation of using electricity billing system"
+msgstr ""
+
+#: templates/ruleregu.html:35
+msgid "Applicable Laws"
+msgstr ""
+
+#: templates/ruleregu.html:37
+msgid "Data Protection Act 1998"
+msgstr ""
+
+#: templates/ruleregu.html:38
+msgid "Copyright, Designs & Patents Act 1988"
+msgstr ""
+
+#: templates/ruleregu.html:39 templates/service.html:26
+#: templates/service.html:70
+msgid "3"
+msgstr ""
+
+#: templates/ruleregu.html:39
+msgid "Computer Misuse Act 1990"
+msgstr ""
+
+#: templates/ruleregu.html:42
+msgid "Regulations and Laws"
+msgstr ""
+
+#: templates/ruleregu.html:44
+msgid ""
+"These regulations apply subject to and in addition to the law. In all "
+"cases involving a breach of the law, legal sanctions may apply."
+msgstr ""
+
+#: templates/ruleregu.html:47
+msgid "Wallet Balance – Limits"
+msgstr ""
+
+#: templates/ruleregu.html:49
+msgid "Minimum amount – 1000ks must left in the wallet’s balance"
+msgstr ""
+
+#: templates/ruleregu.html:50
+msgid "Maximum amount – unlimited"
+msgstr ""
+
+#: templates/ruleregu.html:53
+msgid "Overdue – Charges"
+msgstr ""
+
+#: templates/ruleregu.html:55
+msgid "Late charges 2000ks/day"
+msgstr ""
+
+#: templates/service.html:6
+msgid "Unit Per Charge"
+msgstr ""
+
+#: templates/service.html:11
+msgid "Defining Units and Cost"
+msgstr ""
+
+#: templates/service.html:17
+msgid "1-30"
+msgstr ""
+
+#: templates/service.html:18
+msgid "35 Ks"
+msgstr ""
+
+#: templates/service.html:22
+msgid "31-50"
+msgstr ""
+
+#: templates/service.html:23
+msgid "50 Ks"
+msgstr ""
+
+#: templates/service.html:27
+msgid "51-75"
+msgstr ""
+
+#: templates/service.html:28
+msgid "70 Ks"
+msgstr ""
+
+#: templates/service.html:31 templates/service.html:74
+msgid "4"
+msgstr ""
+
+#: templates/service.html:32
+msgid "76-100"
+msgstr ""
+
+#: templates/service.html:33
+msgid "90 Ks"
+msgstr ""
+
+#: templates/service.html:36 templates/service.html:78
+msgid "5"
+msgstr ""
+
+#: templates/service.html:37
+msgid "101-150"
+msgstr ""
+
+#: templates/service.html:38
+msgid "110 Ks"
+msgstr ""
+
+#: templates/service.html:41 templates/service.html:82
+msgid "6"
+msgstr ""
+
+#: templates/service.html:42
+msgid "151-200"
+msgstr ""
+
+#: templates/service.html:43
+msgid "120 Ks"
+msgstr ""
+
+#: templates/service.html:46 templates/service.html:86
+msgid "7"
+msgstr ""
+
+#: templates/service.html:47
+msgid "201-more"
+msgstr ""
+
+#: templates/service.html:48
+msgid "125 Ks"
+msgstr ""
+
+#: templates/service.html:52
+msgid "Top Up Options"
+msgstr ""
+
+#: templates/service.html:57
+msgid "Available Top-up Amounts"
+msgstr ""
+
+#: templates/service.html:63
+msgid "1000 Ks"
+msgstr ""
+
+#: templates/service.html:67
+msgid "5000 Ks"
+msgstr ""
+
+#: templates/service.html:71
+msgid "10,000 Ks"
+msgstr ""
+
+#: templates/service.html:75
+msgid "50,000 Ks"
+msgstr ""
+
+#: templates/service.html:79
+msgid "100,000 Ks"
+msgstr ""
+
+#: templates/service.html:83
+msgid "500,000 Ks"
+msgstr ""
+
+#: templates/service.html:87
+msgid "1,000,000 Ks"
+msgstr ""
+
+#: templates/service.html:93
+msgid "Calculator"
+msgstr ""
+
+#: templates/service.html:100
+msgid "Calculate"
+msgstr ""
+
+#: templates/shop.html:5 templates/view_topup.html:4
+msgid "Wallet Shop"
+msgstr ""
+
+#: templates/shop.html:10 templates/view_topup.html:9
+msgid "Select Wallet Amount"
+msgstr ""
+
+#: templates/shop.html:24 templates/view_topup.html:26
+msgid "Topup Code"
+msgstr ""
+
+#: templates/shop.html:25 templates/view_topup.html:27
+msgid "Money"
+msgstr ""
+
+#: templates/shop.html:26
+msgid "Action"
+msgstr ""
+
+#: templates/updatedb.html:5
+msgid "Upload an excel file"
+msgstr ""
+
+#: templates/updatedb.html:6
+msgid "Excel file upload (csv, tsv, csvz, tsvz only)"
+msgstr ""
+
+#: templates/user.html:8
+msgid "Search"
+msgstr ""
+
+#: templates/user.html:11
+msgid "Total Users - "
+msgstr ""
+
+#: templates/user.html:11
+msgid " Users"
+msgstr ""
+
+#: templates/user.html:20
+msgid "Credits"
+msgstr ""
+
+#: templates/user.html:22
+msgid "Online Status"
+msgstr ""
+
+#: templates/userhome.html:9
+msgid "MeterID : "
+msgstr ""
+
+#: templates/userhome.html:21
+msgid "Overdues : "
+msgstr ""
+
+#: templates/userhome.html:25
+msgid "Balances : "
+msgstr ""
+
+#: templates/userhome.html:32
+msgid "Your Info"
+msgstr ""
+
+#: templates/userhome.html:68
+msgid "Current Year Payment"
+msgstr ""
+
+#: templates/userhome.html:73
+msgid "Month"
+msgstr ""
+
+#: templates/userhome.html:74
+msgid "Year"
+msgstr ""
+
+#: templates/userhome.html:75
+msgid "Amount"
+msgstr ""
+
+#: templates/userhome.html:97
+msgid "Total Electricity Usage of this Month"
+msgstr ""
+
+#: templates/userhome.html:100
+msgid "Total Unit :"
+msgstr ""
+
+#: templates/userhome.html:113
+msgid "Get Receipt"
+msgstr ""
+
+#: templates/view_topup.html:12
+msgid "Select Amount"
+msgstr ""
+
+#: templates/view_topup.html:19
+msgid "Generate New Topup Codes"
+msgstr ""
+
+#: templates/view_topup.html:28
+msgid "Sold"
+msgstr ""
+

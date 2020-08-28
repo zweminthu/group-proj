@@ -1,0 +1,261 @@
+<html>
+	<head>	
+	<title>{{ _('Electricity Billing System') }}</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS local Links goes here -->
+	<link rel="shortcut icon" href="../static/images/ico.jpg">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" /> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="../static/css/base.css">
+	<link rel="stylesheet" href="../static/css/login-reg.css">
+	<link rel="stylesheet" href="../static/css/user.css">
+
+
+	<!-- Font Awsome Links -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+	<!-- Graph Link -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
+
+	<!-- Javascript local links goes here -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script> -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script> -->
+	<script src="../static/js/graph.js"></script>
+	</head>
+	<body>
+		
+	<div class="sticky-top">
+		<nav class="navbar navbar-expand-lg navbox">
+			<div class="container" style="max-width: 90%;">
+				<a class="navbar-brand" href="{{ url_for('index') }}">{{ _('Electricity Billing System') }}</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fa fa-bars burger"></i>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarText">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="{{ url_for('index') }}">{{ _('Home') }} <span class="sr-only">{{ _('(current)') }}</span></a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								{{ _('Language') }}
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="/lan?lan=en&re={{ request.path }}">{{ _('English') }}</a>
+								<a class="dropdown-item" href="/lan?lan=my&re={{ request.path }}">{{ _('Myanmar') }}</a>
+							</div>
+						</li>
+						{% if 'customer_id' in session %}
+						<li class="nav-item">
+							<a class="nav-link" href="{{ url_for('service') }}">{{ _('Service') }}</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{{ url_for('aboutus', _anchor='feedback') }}">{{ _('Feedback') }}</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="" data-toggle="modal" data-target="#topupModal">{{ _('Topup') }}</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{{ url_for('aboutus') }}">{{ _('About Us') }}</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{{ url_for('faq') }}">{{ _('FAQ') }}</a>
+						</li>
+						{% if session['shop'] == "YES" %}
+						<li class="nav-item">
+							<a class="nav-link" href="{{ url_for('shop') }}">{{ _('Shop') }}</a>
+						</li>
+						{% endif %}
+						{% endif %}
+						{% if 'admin_id' in session %}
+						<li class="nav-item">
+							<a class="nav-link" href="{{ url_for('user') }}">{{ _('Users') }}</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{{ url_for('view_topup') }}">{{ _('Topup Cards') }}</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{{ url_for('noticeboardedit') }}">{{ _('Noticeboard') }}</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="{{ url_for('feedback') }}">{{ _('Feedback') }}</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="rpDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								{{ _('Reports') }}
+							</a>
+							<div class="dropdown-menu" aria-labelledby="rpDropdown">
+								<a class="dropdown-item" data-toggle="modal" data-target="#month">{{ _('Monthly Report') }}</a>
+								<a class="dropdown-item" data-toggle="modal" data-target="#year">{{ _('Yearly Report') }}</a>
+							</div>
+						</li>
+						<li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('updatedb') }}">{{ _('Update Database') }}</a>
+                        </li>
+						<!-- <li class="nav-item">
+							<a class="nav-link" href="{{ url_for('updatedb') }}"></a>
+						</li> -->
+						{% endif %}
+						<li class="nav-item">
+							<a class="nav-link" href="{{ url_for('logout') }}">{{ _('Logout') }}</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container-fluid mininotice" role="alert">
+			<marquee behavior="scroll" direction="left" id="notice_bar"></marquee>
+		</div>
+	</div>
+	{% block body %}
+	<!-- Main contents goes here -->
+	{% endblock %}
+	</body>
+	<div class="modal fade" id="topupModal" tabindex="-1" role="dialog" aria-labelledby="ModalMeterIDTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="form-inline d-flex justify-content-between p-3">
+					<h5 class="modal-title" id="ModalMeterIDTitle">{{ _('Top Up') }}</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="form-inline justify-content-center">
+						<label>{{ _('Topup Code :') }} &nbsp;</label>
+						<input type="text" class="form-control" id="topupcode" placeholder="Topup Code">
+					</div>
+				</div>
+				<div class="form-inline d-flex justify-content-end p-3">	
+					<button type="button" class="btn btn-outline-dark" style="margin-right: 8px;" id="topup">{{ _('Topup') }}</button>
+					<button type="button" class="btn btn-outline-danger" data-dismiss="modal">{{ _('Close') }}</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="uploadModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<form action="" method=post enctype=multipart/form-data>
+				<div class="modal-content">
+					<div class="form-inline d-flex justify-content-between p-3">
+						<h5 class="modal-title" id="ModalCenterTitle">Excel File Upload</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="form-inline justify-content-center">
+							<div class="custom-file">
+								<label>CSV, TSV, CSVZ, TSVZ Only</label>
+								<input type="file" name="file" class="custom-file-input" id="customFile" required>
+								<label class="custom-file-label" for="customFile">Choose file ...</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-inline d-flex justify-content-end p-3">
+						<button type="submit" class="btn btn-outline-dark" style="margin-right: 8px;">Upload</button>
+						<button type="button" class="btn btn-outline-danger btnwidth" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="modal fade" id="month" tabindex="-1" role="dialog" aria-labelledby="MonthCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<form action="{{ url_for('month_download') }}" method="post">
+				<div class="modal-content">
+					<div class="form-inline d-flex justify-content-between p-3">
+						<h5 class="modal-title" id="MonthCenterTitle">Select Month</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="form-inline justify-content-center">
+							<div class="custom-file">
+								<select name="month" id="name">
+									{% set mon = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'] %}
+									{% for m in mon %}
+									<option value="{{ m }}">{{ m }}</option>
+									{% endfor %}
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="form-inline d-flex justify-content-end p-3">
+						<button type="submit" class="btn btn-outline-dark" style="margin-right: 8px;">Download</button>
+						<button type="button" class="btn btn-outline-danger btnwidth" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="modal fade" id="year" tabindex="-1" role="dialog" aria-labelledby="YearCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<form action="{{ url_for('year_download') }}" method="post">
+				<div class="modal-content">
+					<div class="form-inline d-flex justify-content-between p-3">
+						<h5 class="modal-title" id="YearCenterTitle">Select Year</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="form-inline justify-content-center">
+							<div class="custom-file">
+								<select name="year" id="year">
+									{% set yer = ['2010','2011','2012','2013','2014','2015','2016','2017','2018','2019','2020','2021','2022','2023','2024','2025'] %}
+									{% for y in yer %}
+									<option value="{{ y }}">{{ y }}</option>
+									{% endfor %}
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="form-inline d-flex justify-content-end p-3">
+						<button type="submit" class="btn btn-outline-dark" style="margin-right: 8px;">Download</button>
+						<button type="button" class="btn btn-outline-danger btnwidth" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<footer>
+	<div class="footer d-flex justify-content-between footerbox fixed-bottom">
+		<span>{{ _('2019 @ All Right Reserved') }}</span>
+		<span>
+			<a href="{{ url_for('ruleregu') }}">{{ _('Terms & Conditions') }} | {{ _('Privacy Policy') }}</a>
+		</span>
+	</div>
+	</footer>
+	<script>
+		$('#topup').click(
+			function(){
+				$.ajax({
+					type: "POST",
+					url: "/topup",
+					data: {topupcode: $('#topupcode').val(),re: "{{ request.path }}"},
+					dataType: "json",
+					success: function(data){
+						$('#msg').text("{{ _('Topup Success') }}");
+						$('#balance').text(data.money);
+						$("#topupModal").modal('toggle');
+						$("#myModal").modal('toggle');
+					}
+				})
+			}
+		)
+		$(document).ready(function(){
+			"{% for n in notice %}"
+				$('#notice_bar').append("<a style='padding-right:5em' href='/noticeboard#{{ n[0] }}'>{{ n[1] }}</a>")
+			"{% endfor %}"
+		})
+	</script>
+</html>

@@ -1,0 +1,1224 @@
+# Burmese translations for PROJECT.
+# Copyright (C) 2019 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2019-09-18 15:38+0630\n"
+"PO-Revision-Date: 2019-09-10 19:44+0630\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: my\n"
+"Language-Team: my <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.7.0\n"
+
+#: forms.py:6
+msgid "Invalid password length"
+msgstr "စကားဝှက်တိုလွန်းသည်"
+
+#: forms.py:9 forms.py:17 templates/register.html:22
+msgid "Email"
+msgstr "အီးမေးလ်"
+
+#: forms.py:10 forms.py:15 templates/register.html:30
+#: templates/reset_password.html:14
+msgid "Password"
+msgstr "စကားဝှက်"
+
+#: forms.py:11
+msgid "Login"
+msgstr "အကောင့်ဝင်ရန်"
+
+#: forms.py:14
+msgid "User Name"
+msgstr "အသုံးပြုသူအမည်"
+
+#: forms.py:16 templates/_modal2.html:23
+msgid "Confirm Password"
+msgstr "စကားဝှက်ကိုအတည်ပြုပါ"
+
+#: forms.py:16 forms.py:30
+msgid "Password doesn't match."
+msgstr "စကားဝှက်ကိုက်ညီမှုမရှိ"
+
+#: forms.py:18 templates/register.html:46
+msgid "Date of Birth"
+msgstr "မွေးနေ့"
+
+#: forms.py:19 templates/register.html:54
+msgid "Phone Number"
+msgstr "ဖုန်းနံပါတ်"
+
+#: forms.py:20 templates/adminhome.html:17 templates/adminhome.html:82
+#: templates/register.html:62 templates/user.html:21
+msgid "Meter ID"
+msgstr "မီတာနံပတ်"
+
+#: forms.py:21 templates/register.html:70
+msgid "Address"
+msgstr "လိပ်စာ"
+
+#: forms.py:22
+msgid "Register"
+msgstr "အကောင့်ဆောက်ရန်"
+
+#: forms.py:26
+msgid "Request Reset Link"
+msgstr "စကားဝှက်‌‌ပြောင်းရန် လင့်ပို့ပါ"
+
+#: forms.py:31 templates/_modal2.html:5 templates/adminhome.html:62
+msgid "Change Password"
+msgstr "စကားဝှက်ပြောင်းရန်"
+
+#: server.py:123
+msgid "Please Login!"
+msgstr "ကျေးဇူးပြုပြီ အကောင့်ဝင်ပါ"
+
+#: server.py:138 server.py:165
+msgid "Wrong Email Address or Password."
+msgstr "အီးမေးလ်လိပ်စာသို့မဟုတ်စကားဝှက်မှားယွင်းနေ။"
+
+#: server.py:141
+msgid "Please confirm your email address first"
+msgstr "သင့်အီးမေးလ်လိပ်စာပထမဦးဆုံးအတည်ပြုပေးပါ"
+
+#: server.py:199
+msgid "Account already exists."
+msgstr "အကောင့်ရှိပြီးဖြစ်သည်။"
+
+#: server.py:220
+msgid "Please confirm your email address."
+msgstr "သင့်အီးမေးလ်လိပ်စာပထမဦးဆုံးအတည်ပြုပေးပါ"
+
+#: server.py:230 server.py:268
+msgid "Token expired!"
+msgstr "သက်တမ်းလွန်သောတိုကင်ဖြစ်သည်။"
+
+#: server.py:236
+msgid "Email confirmed"
+msgstr "အီးမေးလ်ပို့ပြီးအတည်ပြုခဲ့သည်"
+
+#: server.py:253
+msgid "Account does not exists"
+msgstr "အကောင့်မတည်ရှိပါဘူး"
+
+#: server.py:258
+msgid "Please confirm email address to login!"
+msgstr "အကောင့်ဝင်ရန်သင့်အီးမေးလ်လိပ်စာပထမဦးဆုံးအတည်ပြုပေးပါ"
+
+#: server.py:277
+msgid "Your account is now active! Try Login!"
+msgstr "အကောင့်ဝင်နိုင်ပြီ!ထပ်ကြိုးစားပါ!"
+
+#: server.py:366 server.py:367
+msgid "Successfully Edited"
+msgstr ""
+
+#: server.py:393 server.py:462 server.py:645
+msgid "Success"
+msgstr "အောင်မြင်သည်"
+
+#: server.py:403 server.py:418
+msgid "Successfully Deleted"
+msgstr "အောင်မြင်စွာဖျက်ပစ်ပြီးပါပြီ"
+
+#: server.py:431
+msgid "User is now registered as shop"
+msgstr "အသုံးပြုသူယခုဆိုင်အဖြစ်မှတ်ပုံတင်ပြီးပါပြီ"
+
+#: server.py:687
+msgid "Bought"
+msgstr "ဝယ်ပြီးပါပြီ"
+
+#: server.py:710
+msgid "Error"
+msgstr "မှားပါသည်"
+
+#: server.py:730
+msgid "Successfully Paid"
+msgstr "အောင်မြင်စွာ ဝယ်ပြီးပါပြီ"
+
+#: templates/_modal2.html:13
+msgid "Current Password"
+msgstr "ယခုလက်ရှိ စကားဝှက်"
+
+#: templates/_modal2.html:18
+msgid "New Password"
+msgstr "စကားဝှက်အသစ်"
+
+#: templates/_modal2.html:27
+msgid "Save changes"
+msgstr "ပြောင်းလဲမှုများကိုအတည်ပြုပါ"
+
+#: templates/_modal2.html:28 templates/_modal2.html:66 templates/base.html:138
+msgid "Close"
+msgstr "ပိတ်မည်"
+
+#: templates/_modal2.html:54 templates/_modal2.html:65
+msgid "Pay"
+msgstr "ပေးပါ"
+
+#: templates/_modal2.html:61
+msgid "Do You Want To Make A Payment"
+msgstr "သင်ဟာငွေပေးချေလိုပါသလား?"
+
+#: templates/aboutus.html:5 templates/base.html:66
+msgid "About Us"
+msgstr "ကျွန်တော်တို့အကြောင်း"
+
+#: templates/aboutus.html:6
+msgid ""
+"Thank you for using our Electricity Billing System. Our system is "
+"designed to enable your feel \n"
+"        free to manage electricity supply and billing from our system to "
+"collect and control all utility \n"
+"        materials such as Pole, Meter and Phone as well. "
+msgstr ""
+"ကျွန်ုပ်တို့၏ လျှပ်စစ်ငွေပေးချေစနစ်ကို အသုံးပြုသည့်အတွက် ကျေးဇူးတင်ပါသည်။"
+" ကျွန်ုပ်တို့၏လျှပ်စစ်ငွေပေးချေစနစ်ကို အခမဲ့ အသုံးပြု စီမံခန့်ခွဲ "
+"နိုင်မည်ဖြစ်ပါသည်။"
+
+#: templates/aboutus.html:29
+msgid "Previous"
+msgstr "ရှေ့စာမျက်နှာသို့"
+
+#: templates/aboutus.html:33
+msgid "Next"
+msgstr "နောက်စာမျက်နှာသို့"
+
+#: templates/aboutus.html:37
+msgid "Is the system helpful for modern society?"
+msgstr ""
+"ယနေ့ခေတ် အသုံးပြုသူများအတွက် ကျွန်ုပ်တို့၏ အွန်လိုင်း "
+"လျှပ်စစ်ငွေပေးချေစနစ်က အထောက်ကူပြုပါသလား?"
+
+#: templates/aboutus.html:38
+msgid ""
+"Smoother and easier payment processes for electricity billing.\n"
+"                More systematic data storage and processing styles plus "
+"easy to configure the database.\n"
+"                More accurate in electricity bill calculation.Save money "
+"for transportation and time.\n"
+"                Produce consistent invoices after transaction."
+msgstr ""
+"လျှပ်စစ်မီးငွေတောင်းခံဘို့ ချောမွေ့လွယ်ကူငွေပေးချေမှုလုပ်ငန်းစဉ်များ။ "
+"ပိုများသောစနစ်တကျ ဒေတာသိုလှောင်မှုနဲ့ "
+"အပြောင်းအလဲနဲ့စတိုင်များပေါင်းဒေတာဘေ့စ် "
+"တည်ဆောက်ရန်လွယ်ကူ။လျှပ်စစ်မီးဥပဒေကြမ်း တွက်ချက်မှုတွင်ပိုမိုတိကျ။ "
+"သယ်ယူပို့ဆောင်ရေးနှင့် အချိန်အဘို့ပိုက်ဆံသိမ်းဆည်းပါ။ "
+"ငွေပေးငွေယူပြီးနောက် တသမတ်တည်း ငွေတောင်းခံလွှာများကိုထုတ်လုပ်ပေးသည်။"
+
+#: templates/aboutus.html:48
+msgid "Objective Views"
+msgstr "ရည်ရွယ်ချက်များ"
+
+#: templates/aboutus.html:49
+msgid ""
+"From the objective view, electricity billing system is \n"
+"                    to be able to manage the electricity, maintain the "
+"connections and store \n"
+"                    electricity bill and keep all the information of "
+"customers."
+msgstr ""
+"ရည်ရွယ်ချက်မှာအမြင်ကနေ, လျှပ်စစ်မီးငွေတောင်းခံစနစ်ဆက်သွယ်မှုများနှင့် "
+"စတိုးဆိုင်လျှပ်စစ်မီးဥပဒေကြမ်းကိုထိန်းသိမ်းရန်နှင့် ဖောက်သည်များ၏ "
+"အချက်အလက်တွေအားလုံးကို "
+"စောင့်ရှောက်လျှပ်စစ်ဓာတ်အားစီမံခန့်ခွဲနိုင်ဖြစ်ရန်ဖြစ်သည်။"
+
+#: templates/aboutus.html:57
+msgid "System"
+msgstr "စနစ်"
+
+#: templates/aboutus.html:58
+msgid ""
+"The process of electricity billing system automates the \n"
+"                    traditional transaction process, calculates the "
+"charges of electricity bill and \n"
+"                    evaluates the penalties and charges for customers who"
+" has been in an electricity connection."
+msgstr ""
+"လျှပ်စစ်မီးငွေတောင်းခံစနစ်၏ လုပ်ငန်းစဉ်သည်အစဉ်အလာ "
+"ငွေပေးငွေယူဖြစ်စဉ်ကိုအလိုအလျောက် လျှပ်စစ်မီးဥပဒေကြမ်း၏ "
+"စွဲချက်တွက်ချက်နှင့် ပြစ်ဒဏ်များနှင့်လျှပ်စစ်မီး ဆက်စပ်. "
+"ခဲ့သူကိုဖောက်သည်များအတွက်စွဲချက်တန်ဖိုး။"
+
+#: templates/aboutus.html:66
+msgid "Offer"
+msgstr "ကမ်းလှမ်းမှုများ"
+
+#: templates/aboutus.html:67
+msgid ""
+"We have tried to do as much as the work for you, through \n"
+"                    the design, payment processor combination and etc."
+msgstr ""
+"ကျနော်တို့ဒီဇိုင်း, ငွေပေးချေမှု စနစ် ကိုပေါင်းစပ်နှင့်စတာတွေကတဆင့်, "
+"သင်တို့အဘို့အလုပ်သလောက်လုပ်ဖို့ကြိုးစားခဲ့ကြ"
+
+#: templates/aboutus.html:74
+msgid "Customer Service Survey"
+msgstr "၀န်ဆောင်မှုများ"
+
+#: templates/aboutus.html:75
+msgid "Please take a moment to fill out this survey"
+msgstr "ကျေးဇူးပြု ဒီစစ်တမ်းကိုဖြည့်စွက်ပါ"
+
+#: templates/aboutus.html:77
+msgid "Overall satisfaction of service"
+msgstr "ဝန်ဆောင်မှု၏ယေဘုယျအားကျေနပ်မှု"
+
+#: templates/aboutus.html:81 templates/aboutus.html:92
+#: templates/aboutus.html:120 templates/aboutus.html:148
+msgid "Very Satisfied"
+msgstr "အလွန်ကျေနပ်သည်"
+
+#: templates/aboutus.html:82 templates/aboutus.html:97
+#: templates/aboutus.html:125 templates/aboutus.html:153
+msgid "Satisfied"
+msgstr "ကျေနပ်သည်"
+
+#: templates/aboutus.html:83 templates/aboutus.html:102
+#: templates/aboutus.html:130 templates/aboutus.html:158
+msgid "Neutral"
+msgstr "အသင့်အတင့်"
+
+#: templates/aboutus.html:84 templates/aboutus.html:107
+#: templates/aboutus.html:135 templates/aboutus.html:163
+msgid "Unsatisfied"
+msgstr "မပြည့်စုံပါ"
+
+#: templates/aboutus.html:85 templates/aboutus.html:112
+#: templates/aboutus.html:140 templates/aboutus.html:168
+msgid "Very Unsatisfied"
+msgstr "လုံး၀မကျေနပ်ပါ"
+
+#: templates/aboutus.html:89
+msgid "Friendliness"
+msgstr "အသုံးပြုရလွယ်ကူမှု"
+
+#: templates/aboutus.html:117
+msgid "Accuracy"
+msgstr "တိကျသေချာမှု"
+
+#: templates/aboutus.html:145
+msgid "Usefulness"
+msgstr "အသုံးဝင်မှု"
+
+#: templates/aboutus.html:175
+msgid "Would you use our customer service in the future?"
+msgstr "ကျွန်တော်တို့ရဲ့ ဖောက်သည်ဝန်ဆောင်မှုကို အသုံးပြုနိုင်မလား?"
+
+#: templates/aboutus.html:177 templates/aboutus.html:179
+msgid "Yes"
+msgstr "လုပ်မည်"
+
+#: templates/aboutus.html:183 templates/aboutus.html:185
+msgid "No"
+msgstr "မလုပ်ပါ"
+
+#: templates/aboutus.html:189 templates/aboutus.html:191
+msgid "Maybe"
+msgstr "ဖြစ်နိုင်စရာ"
+
+#: templates/aboutus.html:195
+msgid "How can we improve our service?"
+msgstr "ဘယ်လို ကျွန်တော်တို့ရဲ့ဝန်ဆောင်မှု တိုးတက်စေရန်နိုင်ပါတယ်"
+
+#: templates/aboutus.html:196
+msgid "Feedback Content"
+msgstr "တုံ့ပြန်ချက်အကြောင်းအရာ"
+
+#: templates/aboutus.html:197
+msgid "Let us know what you want ..."
+msgstr "ဘာအလိုရှိပါသလဲ?"
+
+#: templates/aboutus.html:199
+msgid "Send"
+msgstr "ပေးပို့"
+
+#: templates/adminhome.html:9
+msgid "Previous Month Payment Status"
+msgstr "ယခင်လငွေပေးချေမှု"
+
+#: templates/adminhome.html:14 templates/adminhome.html:81
+#: templates/adminhome.html:109 templates/detail.html:18
+#: templates/service.html:10 templates/service.html:56
+msgid "No."
+msgstr "အမှတ်"
+
+#: templates/adminhome.html:15 templates/register.html:14
+#: templates/user.html:19
+msgid "Username"
+msgstr "အသုံးပြုသူအမည်"
+
+#: templates/adminhome.html:16 templates/adminhome.html:83
+msgid "Balance"
+msgstr "လက်ကျန်ငွေ"
+
+#: templates/adminhome.html:39
+msgid "Admin Info"
+msgstr "အဒ်မင်အင်ဖို"
+
+#: templates/adminhome.html:63 templates/adminhome.html:135
+#: templates/noticeboard.html:21 templates/noticeboard.html:22
+#: templates/noticeboardedit.html:17
+msgid "Edit"
+msgstr "ပြင်ဆင်"
+
+#: templates/adminhome.html:76
+msgid "Payment Overdue Status"
+msgstr "ငွေပေးချေရမည့်ရက်ကျော်နေပြီ"
+
+#: templates/adminhome.html:104 templates/detail.html:12
+msgid "Recent Activities"
+msgstr "မကြာသေးမှီကလှုပ်ရှားမှုများ"
+
+#: templates/adminhome.html:110 templates/detail.html:19
+msgid "Activity"
+msgstr "လှုပ်ရှားမှု"
+
+#: templates/adminhome.html:111 templates/detail.html:20
+#: templates/userhome.html:76
+msgid "Date"
+msgstr "နေ့စှဲ"
+
+#: templates/adminhome.html:112 templates/detail.html:21
+msgid "Time"
+msgstr "အချိန်"
+
+#: templates/adminhome.html:141
+msgid "Confirm"
+msgstr "အတည်ပြု"
+
+#: templates/adminhome.html:188
+msgid "Password does not match"
+msgstr "စကားဝှက်မကိုက်ညီ"
+
+#: templates/adminhome.html:192
+msgid "Invalid Credential"
+msgstr "မှားနေပါတယ်"
+
+#: templates/adminhome.html:196
+msgid "Password Successfully Updated"
+msgstr "စကားဝှက်ကိုအောင်မြင်စွာလဲလှယ်ပြီးပါပြီ"
+
+#: templates/base.html:3 templates/base.html:37 templates/link.html:1
+msgid "Electricity Billing System"
+msgstr "လျှပ်စစ်ဘေပေးချေရန်"
+
+#: templates/base.html:44
+msgid "Home"
+msgstr "မူလနေရာ"
+
+#: templates/base.html:44
+msgid "(current)"
+msgstr ""
+
+# #: templates/base.html:44
+# msgid "(current)"
+# msgstr "(လက်ရှိ)"
+#: templates/base.html:48
+msgid "Language"
+msgstr "ဘာသာစကား"
+
+#: templates/base.html:51
+msgid "English"
+msgstr "အင်္ဂလိပ်"
+
+#: templates/base.html:52
+msgid "Myanmar"
+msgstr "မြန်မာ"
+
+#: templates/base.html:57
+msgid "Service"
+msgstr "ဝန်ဆောင်မှုများ"
+
+#: templates/base.html:60 templates/base.html:88
+msgid "Feedback"
+msgstr "တုံ့ပြန်မှု"
+
+#: templates/base.html:63 templates/base.html:137
+msgid "Topup"
+msgstr "ငွေဖြည့်ရန်"
+
+#: templates/base.html:69 templates/faq.html:5
+msgid "FAQ"
+msgstr "အမေးအ‌ဖြေများ"
+
+#: templates/base.html:73
+msgid "Shop"
+msgstr "ဆိုင်"
+
+#: templates/base.html:79
+msgid "Users"
+msgstr "အသုံးပြုသူများ"
+
+#: templates/base.html:82
+msgid "Topup Cards"
+msgstr "ငွေဖြည့်ကဒ်"
+
+#: templates/base.html:85 templates/noticeboard.html:7
+#: templates/noticeboardedit.html:7
+msgid "Noticeboard"
+msgstr "ကြော်ငြာသင်ပုန်း"
+
+#: templates/base.html:92
+msgid "Reports"
+msgstr "အစီရင်ခံစာမျာ"
+
+#: templates/base.html:95
+msgid "Monthly Report"
+msgstr "လစဉ်အစီရင်ခံစာ"
+
+#: templates/base.html:96
+msgid "Yearly Report"
+msgstr "နှစ်အလိုက်အစီရင်ခံစာ"
+
+#: templates/base.html:100
+msgid "Update Database"
+msgstr "ဒေတာ အသစ်ထည့်ရန်"
+
+#: templates/base.html:107
+msgid "Logout"
+msgstr "အကောင့်ထွက်ရန်"
+
+#: templates/base.html:125
+msgid "Top Up"
+msgstr "ငွေဖြည့်ရန်"
+
+#: templates/base.html:132
+msgid "Topup Code :"
+msgstr "ငွေဖြည့်ရန်ကုဒ်: "
+
+#: templates/base.html:232
+msgid "2019 @ All Right Reserved"
+msgstr "၂၀၁၉ @ မူပိုင်ခွင့်များရယူပြီး"
+
+#: templates/base.html:234 templates/ruleregu.html:4
+msgid "Terms & Conditions"
+msgstr "စည်းကမ်းနှင့်သတ်မှတ်ချက်များ"
+
+#: templates/base.html:234
+msgid "Privacy Policy"
+msgstr "ကိုယ်ရေးအချက်အလက်မူဝါဒ"
+
+#: templates/base.html:247
+msgid "Topup Success"
+msgstr "ငွေဖြည့်အောင်မြင်ပြီးပါပြီ"
+
+#: templates/detail.html:6
+msgid "Username : "
+msgstr "အသုံးပြုသူအမည်"
+
+#: templates/detail.html:7
+msgid "Email : "
+msgstr "အီးမေးလ်"
+
+#: templates/detail.html:8 templates/receipt.html:10
+msgid "Address : "
+msgstr "လိပ်စာ"
+
+#: templates/detail.html:9
+msgid "Balance : "
+msgstr "လက်ကျန်ငွေ"
+
+#: templates/detail.html:38
+msgid "Make Shop"
+msgstr "ဆိုင်အကောင့်ပြုလုပ် "
+
+#: templates/detail.html:44
+msgid "Are you sure you want to delete this user?"
+msgstr "သင်ဤအသုံးပြုသူကိုဖျက်ပစ်ချင်သင်သေချာပါသလား?"
+
+#: templates/faq.html:8
+msgid "1. How can I know my electricity usage?"
+msgstr "တစ်။ ကျွန်ုပ်မည်သို့လျှပ်စစ်ဓာတ်အားအသုံးပြုမှုကိုသိနိုင်မလဲ?"
+
+#: templates/faq.html:12
+msgid "We implemented the graph that shows your electricity usage history."
+msgstr "ငါတို့သည်သင်တို့၏လျှပ်စစ်ဓာတ်အားအသုံးပြုမှုသမိုင်းကိုပြသသောဂရပ်အကောင်အထည်ဖော်ပါတယ်။"
+
+#: templates/faq.html:19
+msgid "2. How can I know important messages?"
+msgstr "နှစ်။ ငါဘယ်လိုအရေးကြီးသောမက်ဆေ့ခ်ျကိုသိနိုင်မလဲ?"
+
+#: templates/faq.html:24
+msgid ""
+"Our system provides notice box to notify and remind any changes of the "
+"system such as bill due date, system changes, special offers and etc."
+msgstr ""
+"ကျွန်ုပ်တို့၏စနစ်ကထိုကဲ့သို့သောဥပဒေကြမ်းကြောင့်ရက်စွဲ, စံနစ် "
+"ကိုအပြောင်းအလဲအထူးကမ်းလှမ်းချက်များနှင့်စသည်တို့ကိုအဖြစ်စနစ်၏မည်သည့်အပြောင်းအလဲများကိုအကြောင်းကြားနှင့်သတိပေးအကြောင်းကြားစာကိုထောက်ပံ့ပါတယ်။"
+
+#: templates/faq.html:31
+msgid "3. How much will I pay on my electricity bills? "
+msgstr "သုံး ။ဘယ်လောက်ငါသည် ငါ့လျှပ်စစ်မီးဥပဒေကြမ်းများအပေါ် ပေးဆောင်ကြမည်နည်း"
+
+#: templates/faq.html:35
+msgid ""
+"Depends on how much electricity your home or business uses and the bill "
+"will be paid for each month usage."
+msgstr ""
+"သင်၏အိမ် သို့မဟုတ်စီးပွားရေးလုပ်ငန်းကို အသုံးပြုသည်နှင့်ဥပဒေကြမ်းတစ်ခုစီကို တစ်လအသုံးပြုမှုများအတွက် ပေးဆောင်ပါလိမ့်မည်။ ဘယ်လောက်လျှပ်စစ်မီးပေါ်တွင် မူတည်သည်။ "
+
+#: templates/faq.html:42
+msgid "4. What Payment Options Do You Have?"
+msgstr "လေး ။သင်ဟာအဘယျသို့ငွေပေးချေ နိုင်သလား?"
+
+#: templates/faq.html:46
+msgid ""
+"We offer e-wallet option for the bill payment to make electronic "
+"transactions."
+msgstr ""
+"ကျနော်တို့အီလက်ထရောနစ်အရောင်းအစေရန်ဥပဒေကြမ်းငွေပေးချေမှုများအတွက်e-ပိုက်ဆံအိတ်ရေွးယူခွင့်"
+" ကိုထောက်ပံ့ပါတယ်။"
+
+#: templates/faq.html:53
+msgid "5. If I forgot my password. Can you set up my account?"
+msgstr "ငါး။ ငါသည်ငါ့စကားဝှက်ကိုမေ့လျှင်။ သငျသညျအကြှနျုပျ၏အကောင့်ပြန်ရနိုင်မလား?"
+
+#: templates/faq.html:57
+msgid ""
+"Click the “Forgot Password” on the login screen, enter the answer to the "
+"security question. If the provided information is correct, a new password"
+" will be sent to the e-mail address associated to your account. "
+msgstr ""
+"အဆိုပါရဲ့ login screen ပေါ်မှာ 'စကားဝှက်မေ့သွားသလား' ကိုနှိပ်ပါ, "
+"လုံခြုံရေးမေးခွန်းရဲ့အဖြေကိုထည့်ပါ။ "
+"ပေးထားသည့်သတင်းအချက်အလက်မှန်ကန်သည်ဆိုပါကတစ်ဦးစကားဝှက်အသစ်သင့်အကောင့်မှဆက်စပ်"
+" e-mail လိပ်စာသို့ပေးပို့ပါလိမ့်မည်။"
+
+#: templates/faq.html:64
+msgid " 6. How can I calculate my total electricity usage cost?"
+msgstr ""
+"ခြောက်။ "
+"ကျွန်ုပ်မည်သို့စုစုပေါင်းလျှပ်စစ်ဓာတ်အားအသုံးပြုမှုကုန်ကျစရိတ်တွက်ချက်နိုင်သလဲ"
+
+#: templates/faq.html:68
+msgid ""
+"You can calculate the total electricity usage cost by clicking the "
+"“Calculate”. "
+msgstr "သင့်အနေဖြင့်နှိပ်ခြင်းအားဖြင့်စုစုပေါင်းလျှပ်စစ်ဓာတ်အားအသုံးပြုမှုကုန်ကျစရိတ်တွက်ချက်နိုင်ပါတယ်"
+
+#: templates/faq.html:75
+msgid "7. Where can I get my electricity bill receipt?"
+msgstr "ခုနှစ်. ဘယ်မှာငါသည်ငါ့လျှပ်စစ်မီးဥပဒေကြမ်းလက်ခံရရှိရနိုင်မလဲ?"
+
+#: templates/faq.html:79
+msgid "In the “Get Receipt” page, you can get your receipt by downloading it."
+msgstr "ငွေလက်ခံပြေစာစာမျက်နှာများတွင်သင်ကဒေါင်းလုပ်ဆွဲအားဖြင့်သင့်ငွေလက်ခံဖြတ်ပိုင်းရနိုင်တယ်။"
+
+#: templates/faq.html:86
+msgid "8. How can I contact?"
+msgstr "ရှစ်. ငါဘယ်လိုဆက်သွယ်ပါနိုင်သလဲ"
+
+#: templates/faq.html:90
+msgid ""
+"Go to about us page and you can contact with us by calling provided phone"
+" numbers. "
+msgstr "ကျွန်တော်တို့ကိုအကြောင်းကိုစာမျက်နှာကိုသွားပါနှင့်သင်ပေးထားသောဖုန်းနံပါတ်ခေါ်ဆိုခြင်းဖြင့်ကျွန်ုပ်တို့နှင့်အတူဆက်သွယ်နိုင်သည်။"
+
+#: templates/faq.html:97
+msgid "9. What impacts do I have if I have a late payment?"
+msgstr ""
+"ကိုး. "
+"ငါနှောင်းပိုင်းတွင်ငွေပေးချေမှုရှိပါကငါသည်အဘယ်သို့သက်ရောက်မှုရှိသနည်း"
+
+#: templates/faq.html:101
+msgid ""
+"The overdue payment will be shown in home page and it will be suspended "
+"if you lack to pay for 3 months.  "
+msgstr ""
+"အဆိုပါရက်ကျော်နေပြီငွေပေးချေမှု home page ကိုပြပေးမည်နှငျ့သငျ 3 "
+"လဆပ်ဖို့အားနည်းနေလျှင်ဆိုင်းငံ့ပါလိမ့်မည်။"
+
+#: templates/feedback.html:11
+msgid "From : "
+msgstr "မှ : "
+
+#: templates/feedback.html:19
+msgid "Friendliness: "
+msgstr "ရင်းနှီးမှု : "
+
+#: templates/feedback.html:20
+msgid "Accuracy: "
+msgstr "တိကျသေချာမှု"
+
+#: templates/feedback.html:21
+msgid "Usefulness: "
+msgstr "အသုံးပြုရလွယ်ကူမှု"
+
+#: templates/feedback.html:22
+msgid "Will use in future: "
+msgstr "အနာဂတျမှာသုံးပါလိမ့်မယ်"
+
+#: templates/login.html:9
+msgid "Welcome to EBS"
+msgstr "အီးဘီအက်စ်မှကြိုဆိုပါသည်"
+
+#: templates/login.html:10 templates/register.html:10
+msgid "EN"
+msgstr "အင်္ဂလိပ်"
+
+#: templates/login.html:10 templates/register.html:10
+msgid "MY"
+msgstr "မြန်မာ"
+
+#: templates/login.html:14 templates/reset_password_req.html:14
+msgid "Enter Email"
+msgstr "အီးမေးလ်ထည့်ပါ"
+
+#: templates/login.html:22
+msgid "Enter Password"
+msgstr "စကားဝှက်ထည့်ပါ"
+
+#: templates/login.html:32 templates/register.html:80
+msgid "Forget Password?"
+msgstr "စကားဝှက်မေ့သွားသလား"
+
+#: templates/login.html:33
+msgid "Register Account"
+msgstr "အကောင့်ဆောက်ရန်"
+
+#: templates/noticeboard.html:23
+msgid "Delete"
+msgstr "ဖျက်ပစ်ပါ"
+
+#: templates/noticeboardedit.html:9
+msgid "Topic Name Here"
+msgstr "ခေါင်းစဉ်အမည်"
+
+#: templates/noticeboardedit.html:12
+msgid "Brief Info Here"
+msgstr "အကျဉ်း"
+
+#: templates/noticeboardedit.html:14
+msgid "Main Contents Goes Here"
+msgstr "ပင်မမာတိကာ"
+
+#: templates/noticeboardedit.html:19
+msgid "Upload"
+msgstr "တင်"
+
+#: templates/receipt.html:8
+msgid "Recipient name : "
+msgstr "လက်ခံသူ အမည်"
+
+#: templates/receipt.html:9
+msgid "Date : "
+msgstr "နေ့စှဲ"
+
+#: templates/receipt.html:11
+msgid "Meter ID : "
+msgstr "မီတာယူနစ် : "
+
+#: templates/receipt.html:22
+msgid "Current Reading : "
+msgstr "လက်ရှိမီတာဖတ်ခြင်း : "
+
+#: templates/receipt.html:26
+msgid "Previous Reading : "
+msgstr "ယခင်မီတာဖတ်ခြင်း : "
+
+#: templates/receipt.html:30
+msgid "Difference Units : "
+msgstr "ယူနစ်ခြားနားချက် : "
+
+#: templates/receipt.html:34
+msgid "Used Units : "
+msgstr "အသုံးပြုပြီးယူနစ် :"
+
+#: templates/receipt.html:38
+msgid "Unit Charges : "
+msgstr "ယူနစ်ကုန်ကျစရိတ်များ : "
+
+#: templates/receipt.html:42
+msgid "Maintenance Cost : "
+msgstr "ထိန်းသိမ်းစောင့်ရှောက်ခ : "
+
+#: templates/receipt.html:46
+msgid "Overdue Cost : "
+msgstr "ရက်လွန်ကြေး : "
+
+#: templates/receipt.html:50 templates/userhome.html:105
+msgid "Total Cost : "
+msgstr "စုစုပေါင်းကုန်ကျစရိတ် : "
+
+#: templates/receipt.html:59
+msgid "Download Receipt"
+msgstr "ပြေစာ ရယူရန်"
+
+#: templates/register.html:9
+msgid "Create a new account"
+msgstr "အကောင့်အသစ်ဖွင့်ရန်"
+
+#: templates/register.html:38 templates/reset_password.html:22
+msgid "Re-type Password"
+msgstr "စကားဝှက်ပြန်ရိုက်ပါ"
+
+#: templates/register.html:81
+msgid "Already have account?"
+msgstr "အကောင့်ရှိပြီးသားလား"
+
+#: templates/reset_password.html:9
+msgid "Reset Password"
+msgstr "စကားဝှက် ပြောင်းရန်"
+
+#: templates/reset_password_req.html:9
+msgid "Reset Password Request"
+msgstr "စကားဝှက်တောင်းဆိုခြင်:"
+
+#: templates/ruleregu.html:7
+msgid "THE ELECTRICITY ACT 2014"
+msgstr "လျှပ်စစ်ဥပဒေ ၂၀၁၄"
+
+#: templates/ruleregu.html:9
+msgid "Electricity Law 2014,"
+msgstr "လျှပ်စစ်ဥပဒေ ၂၀၁၄"
+
+#: templates/ruleregu.html:10
+msgid "2014, Pyidaungsu Hluttaw Law No. (44)"
+msgstr "၂၀၁၄,ပြည်ထောင်စုလွှတ်တော်ဥပဒေအမှတ် (၄၄)"
+
+#: templates/ruleregu.html:11
+msgid "1376, Tazaungmon, Day 5"
+msgstr "၁၃၇၆, တန် ဆောင်းမုန်း, ၅ရက်နေ့  "
+
+#: templates/ruleregu.html:12
+msgid "2014, October, Day 27"
+msgstr "၂၀၁၄ , အောက်တိုဘာလ, ၂၇ရက်နေ့ "
+
+#: templates/ruleregu.html:15
+msgid "Electric power rates and service charges"
+msgstr "လျှပ်စစ်ပါဝါနှုန်းထားများနှင့်ဝန်ဆောင်ခ"
+
+#: templates/ruleregu.html:16 templates/ruleregu.html:37
+#: templates/service.html:16 templates/service.html:62
+msgid "1"
+msgstr "၁"
+
+#: templates/ruleregu.html:16
+msgid ""
+"The relevant ministry shall, with the consent of the Union government, "
+"have the right to fix suitable electric power rates that are to be "
+"charged to the power consumer according to the region. The electric power"
+" rate may be changed from time to time."
+msgstr ""
+"သက်ဆိုင်ရာဝန်ကြီးဌာနက ပြည်ထောင်စုအစိုးရ၏ "
+"သဘောတူခွင့်ပြုချက်နှင့်အတူဒေသတွင်းအညီ အာဏာကိုစားသုံးသူမှ "
+"တရားစွဲဆိုခံရဖို့ဖြစ်ကြောင်း သင့်လျော်သော လျှပ်စစ်ဓာတ်အားခနှုန်းထားများ "
+"ပြင်ဆင်ပိုင်ခွင့်ရှိသည်မူလိမ့်မည်။ အဆိုပါလျှပ်စစ်ဓာတ်အားနှုန်းကို "
+"အချိန်ဖို့အချိန်ကနေပြောင်းလဲသွားနိုင်ပါသည်။"
+
+#: templates/ruleregu.html:17 templates/ruleregu.html:38
+#: templates/service.html:21 templates/service.html:66
+msgid "2"
+msgstr "၂"
+
+#: templates/ruleregu.html:17
+msgid ""
+"The governments of the regions, states, self-administered zones and self-"
+"administered divisions shall have the right to fix, after consultation "
+"with the relevant ministry, suitable electric power rates that are to be "
+"charged for electric power under their own management that is not "
+"acquired from the national grid the electric power rate may be changed "
+"from time to time."
+msgstr ""
+"အဆိုပါဒေသများ, ပြည်နယ်များ, ကိုယ်ပိုင်အုပ်ချုပ်ခွင့်ရဒေသများနှင့် "
+"ကိုယ်ပိုင်အုပ်ချုပ်ခွင့်ရကွဲပြားမှု၏အစိုးရများက "
+"သက်ဆိုင်ရာဝန်ကြီးဌာနတိုင်ပင်ဆွေးနွေးပြီးနောက်, "
+"ပြင်ဆင်ပိုင်ခွင့်ရကြလိမ့်မည်မဟုတ်ကြောင်း "
+"၎င်းတို့၏ကိုယ်ပိုင်စီမံခန့်ခွဲမှုအောက်တွင် "
+"လျှပ်စစ်ဓာတ်အားများအတွက်တရားစွဲဆိုခံရဖို့ဖြစ်ကြောင်း သင့်လျော်သော "
+"လျှပ်စစ်ဓာတ်အားခနှုန်းထားများ အမျိုးသားဇယားကွက်ထဲကနေဝယ်ယူ "
+"လျှပ်စစ်ပါဝါနှုန်းကိုအချိန်ဖို့အချိန်ကနေ ပြောင်းလဲသွားနိုင်ပါသည်။"
+
+#: templates/ruleregu.html:19
+msgid "Administrative actions"
+msgstr "အုပ်ချုပ်ရေးဆိုင်ရာလုပ်ရပ်များ"
+
+#: templates/ruleregu.html:20
+msgid ""
+"The persons with the authority to issue a license to engage in "
+"electricity-related work under section 8 shall have the right to take any"
+" of the following administrative actions if the license holder breaches "
+"the conditions contained in the license or any order or directive issued "
+"by the relevant ministry or is convicted of having committed any offence "
+"under this law-"
+msgstr ""
+"လိုင်စင်ကိုင်ဆောင်သူလိုင်စင်ဒါမှ မဟုတ်ထုတ်ပေးဆိုအမိန့် "
+"သို့မဟုတ်ညွှန်ကြားချက်တွင် ပါရှိသော အခြေအနေဖောက်ဖျက်လျှင် အပိုင်း 8 "
+"အောက်မှာလျှပ်စစ်မီးဆိုင်ရာ အလုပ်အတွက်ထိတွေ့ဆက်ဆံဖို့ "
+"လိုင်စင်ထုတ်ပေးရန်အခွင့်အာဏာနှင့်အတူ ပုဂ္ဂိုလ်များသည် "
+"အောက်ပါစီမံခန့်ခွဲရေးဆိုင်ရာ လုပ်ရပ်များမဆိုယူပိုင်ခွင့်ရှိသည်ရကြလိမ့်မည်"
+" သက်ဆိုင်ရာဝန်ကြီးဌာနကသို့မဟုတ် ဤဥပဒေအရမည်သည့်ပြစ်မှု "
+"ကျူးလွန်ဘဲလျက်ပြစ်မှုထင်ရှားနေသည်"
+
+#: templates/ruleregu.html:21
+msgid "(a) Levying of a fine"
+msgstr "(က) ဒဏ်ငွေ သတ်မှတ်ချက်များ"
+
+#: templates/ruleregu.html:22
+msgid ""
+"(b) Suspension, for a limited time, of the license to engage in "
+"electricity-related work;"
+msgstr ""
+"(ခ) လျှပ်စစ်မီး ဆိုင်ရာအလုပ်အတွက်ထိတွေ့ဆက်ဆံဖို့ "
+"လိုင်စင်ကန့်သတ်အချိန်များအတွက်ရပ်ဆိုင်းမှု,"
+
+#: templates/ruleregu.html:23
+msgid "(c) Revocation of the license to engage in electricity-related work."
+msgstr "(ဂ) လျှပ်စစ်မီး ဆိုင်ရာ အလုပ်အတွက် လိုင်စင်ရုတ်သိမ်းခြင်း။"
+
+#: templates/ruleregu.html:25
+msgid "Offences and penalties"
+msgstr "ပြစ်မှုနှင့်ပြစ်ဒဏ်များ"
+
+#: templates/ruleregu.html:26
+msgid ""
+"Anyone convicted of having violated the prohibition under section shall "
+"be punished with a fine from minimum kyats 100,000 to maximum kyats "
+"500,000. If, after having been punished in this way, he is convicted of "
+"having continued to commit the offence, he shall additionally be punished"
+" with imprisonment from minimum 1 year to maximum 3 years."
+msgstr ""
+"အပိုင်းအောက်ရှိတားမြစ်ချက်တစ်ရပ်ရပ်ကို "
+"ချိုးဖောက်ဘဲလျက်ပြစ်မှုထင်ရှားမည်သူမဆို နိမ့်ဆုံးကျပ်ကနေ 100,000 500,000 "
+"အများဆုံးကျပ်တစ်ဒဏ်ငွေနှင့်အတူ အပြစ်ပေးခံရကြလိမ့်မည်။ ဤနည်းဖြင့် "
+"အပြစ်ပေးခံတော်မူပြီးမှပြီးနောက်, အကယ်.သူသည်ပြစ်မှုကျူးလွန်ဆက်လက်ဘဲ "
+"လျက်ပြစ်မှုထင်ရှားနေသည်, သူဒါ့အပြင်အများဆုံး 3 နှစ်မှနိမ့်ဆုံး 1 "
+"နှစ်ကနေထောင်ဒဏ်နှင့်အတူ အပြစ်ပေးခံရကြလိမ့်မည်။"
+
+#: templates/ruleregu.html:27
+msgid ""
+"Any holder of a license to engage in electricity-related work convicted "
+"of having violated the prohibition under section 36 shall be punished "
+"with a fine from minimum kyats 100,000 to maximum kyats 500,000. If, "
+"after having been punished in this way, he is convicted of having "
+"continued to commit the offence, he shall additionally be punished with "
+"imprisonment from minimum 1 year to maximum 3 years."
+msgstr ""
+"အပိုင်း ၃၆ အောက်ရှိတားမြစ်ချက်တစ်ရပ်ရပ်ကို "
+"ချိုးဖောက်ဘဲလျက်ပြစ်မှုထင်ရှားလျှပ်စစ်မီးဆိုင်ရာ "
+"အလုပ်အတွက်ထိတွေ့ဆက်ဆံဖို့ လိုင်စင်မဆိုကိုင်ဆောင်သူနိမ့်ဆုံး ၁၀၀၀၀၀ "
+"ကျပ်ကနေ အများဆုံးကျပ်၅၀၀၀၀၀ ဒဏ်ငွေနှင့်အတူအပြစ်ပေးခံရကြလိမ့်မည်။ "
+"ဤနည်းဖြင့်အပြစ်ပေးခံတော်မူပြီးမှပြီးနောက်, အကယ်. "
+"သူသည်ပြစ်မှုကျူးလွန်ဆက်လက်ဘဲလျက်ပြစ်မှုထင်ရှားနေသည်, သူဒါ့အပြင်အများဆုံး "
+"3 နှစ်မှနိမ့်ဆုံး 1 နှစ်ကနေထောင်ဒဏ်နှင့်အတူ အပြစ်ပေးခံရကြလိမ့်မည်။"
+
+#: templates/ruleregu.html:29
+msgid "Mr. Thein Sein"
+msgstr "ဦးသိန်းစိန်"
+
+#: templates/ruleregu.html:30
+msgid "Republic of the Union Myanmar"
+msgstr "ပြည်ထောင်စုသမ္မတမြန်မာနိုင်ငံတော်"
+
+#: templates/ruleregu.html:33
+msgid "Rules and Regulation of using electricity billing system"
+msgstr ""
+"စည်းကမ်းများနှင့် လျှပ်စစ်မီးငွေတောင်းခံသည့် "
+"စနစ်အသုံးပြုခြင်း၏စည်းမျဉ်းဥပဒေ"
+
+#: templates/ruleregu.html:35
+msgid "Applicable Laws"
+msgstr "သက်ဆိုင်ရာဥပဒေ"
+
+#: templates/ruleregu.html:37
+msgid "Data Protection Act 1998"
+msgstr "ဒေတာများကိုကာကွယ်စောင့်ရှောက်ရေးအက်ဥပဒေ ၁၉၉၈"
+
+#: templates/ruleregu.html:38
+msgid "Copyright, Designs & Patents Act 1988"
+msgstr "မူပိုင်ခွင့်ဒီဇိုင်း နှင့်မူပိုင်ခွင့် ၁၉၈၈ ဥပဒေ"
+
+#: templates/ruleregu.html:39 templates/service.html:26
+#: templates/service.html:70
+msgid "3"
+msgstr "၃"
+
+#: templates/ruleregu.html:39
+msgid "Computer Misuse Act 1990"
+msgstr "ကွန်ပြူတာကိုတလွဲအသုံးပြုခြင်းအက်ဥပဒေ ၁၉၉၀"
+
+#: templates/ruleregu.html:42
+msgid "Regulations and Laws"
+msgstr "စည်းမျဉ်းများနှင့်ဥပဒေ"
+
+#: templates/ruleregu.html:44
+msgid ""
+"These regulations apply subject to and in addition to the law. In all "
+"cases involving a breach of the law, legal sanctions may apply."
+msgstr ""
+"ဤရွေ့ကားစည်းမျဉ်းများနှင့် ဥပဒေအပြင်ဘာသာရပ်သက်ဆိုင်ပါသည်။ "
+"အားလုံးထဲမှာပညတ်တရား၏ပြိုပျက်ရာနှင့် ပတ်သက်သောအမှုများ, "
+"ဥပဒေရေးရာပိတ်ဆို့မှုများလျှောက်ထားနိုင်ပါသည်။"
+
+#: templates/ruleregu.html:47
+msgid "Wallet Balance – Limits"
+msgstr "အကောင့်ငွေပမာဏ - အကန့်အသက်"
+
+#: templates/ruleregu.html:49
+msgid "Minimum amount – 1000ks must left in the wallet’s balance"
+msgstr "အနည်းဆုံး ငွေပမာဏ - ၁၀၀၀ ကျပ်"
+
+#: templates/ruleregu.html:50
+msgid "Maximum amount – unlimited"
+msgstr "အများဆုံး ငွေပမာဏ - အကန့်အသက်မဲ့"
+
+#: templates/ruleregu.html:53
+msgid "Overdue – Charges"
+msgstr "ရက်လွန်ကြေး"
+
+#: templates/ruleregu.html:55
+msgid "Late charges 2000ks/day"
+msgstr " တရက်နောက်ကျကြေး -၂၀၀၀ ကျပ်"
+
+#: templates/service.html:6
+msgid "Unit Per Charge"
+msgstr "ယူနစ် အလိုက် ကျငွေ"
+
+#: templates/service.html:11
+msgid "Defining Units and Cost"
+msgstr "ငွေပမာဏ နှင့်ယူနစ် များ"
+
+#: templates/service.html:17
+msgid "1-30"
+msgstr "၁-၃၀"
+
+#: templates/service.html:18
+msgid "35 Ks"
+msgstr "၃၅ ကျပ်"
+
+#: templates/service.html:22
+msgid "31-50"
+msgstr "၃၁-၅၀"
+
+#: templates/service.html:23
+msgid "50 Ks"
+msgstr "၅၀ ကျပ်"
+
+#: templates/service.html:27
+msgid "51-75"
+msgstr "၅၁ -၇၅"
+
+#: templates/service.html:28
+msgid "70 Ks"
+msgstr "၇၀ ကျပ်"
+
+#: templates/service.html:31 templates/service.html:74
+msgid "4"
+msgstr "၄"
+
+#: templates/service.html:32
+msgid "76-100"
+msgstr "၇၆ - ၁၀၀"
+
+#: templates/service.html:33
+msgid "90 Ks"
+msgstr "၉၀ ကျပ်"
+
+#: templates/service.html:36 templates/service.html:78
+msgid "5"
+msgstr "၅"
+
+#: templates/service.html:37
+msgid "101-150"
+msgstr "၁၀၁-၁၅၀"
+
+#: templates/service.html:38
+msgid "110 Ks"
+msgstr "၁၁၀ ကျပ်"
+
+#: templates/service.html:41 templates/service.html:82
+msgid "6"
+msgstr "၆"
+
+#: templates/service.html:42
+msgid "151-200"
+msgstr "၁၅၁-၂၀၀"
+
+#: templates/service.html:43
+msgid "120 Ks"
+msgstr "၁၂၀ ကျပ်"
+
+#: templates/service.html:46 templates/service.html:86
+msgid "7"
+msgstr "၇"
+
+#: templates/service.html:47
+msgid "201-more"
+msgstr "၂၀၁ - အထက်"
+
+#: templates/service.html:48
+msgid "125 Ks"
+msgstr "၁၂၅ ကျပ်"
+
+#: templates/service.html:52
+msgid "Top Up Options"
+msgstr "ငွေဖြည့် ရန် ရွေးချယ်မူ"
+
+#: templates/service.html:57
+msgid "Available Top-up Amounts"
+msgstr "ငွေဖြည့် နိုင်သောပမာဏများ"
+
+#: templates/service.html:63
+msgid "1000 Ks"
+msgstr "၁၀၀၀ ကျပ်"
+
+#: templates/service.html:67
+msgid "5000 Ks"
+msgstr "၅၀၀၀ ကျပ်"
+
+#: templates/service.html:71
+msgid "10,000 Ks"
+msgstr "၁၀ ၀၀၀ကျပ်"
+
+#: templates/service.html:75
+msgid "50,000 Ks"
+msgstr "၅၀ ၀၀၀ ကျပ်"
+
+#: templates/service.html:79
+msgid "100,000 Ks"
+msgstr "၁၀၀ ၀၀၀ ကျပ်"
+
+#: templates/service.html:83
+msgid "500,000 Ks"
+msgstr "၅၀၀ ၀၀၀ ကျပ်"
+
+#: templates/service.html:87
+msgid "1,000,000 Ks"
+msgstr "၁ ၀၀၀ ၀၀၀ ကျပ်"
+
+#: templates/service.html:93
+msgid "Calculator"
+msgstr "ဂဏန်းပေါင်းစက်"
+
+#: templates/service.html:100
+msgid "Calculate"
+msgstr "တွက်ပါ"
+
+#: templates/shop.html:5 templates/view_topup.html:4
+msgid "Wallet Shop"
+msgstr "ဆိုင်"
+
+#: templates/shop.html:10 templates/view_topup.html:9
+msgid "Select Wallet Amount"
+msgstr "ငွေပမာဏရွေးရန်"
+
+#: templates/shop.html:24 templates/view_topup.html:26
+msgid "Topup Code"
+msgstr "ငွေဖြည့် နံပါတ်"
+
+#: templates/shop.html:25 templates/view_topup.html:27
+msgid "Money"
+msgstr "ပိုက်ဆံ"
+
+#: templates/shop.html:26
+msgid "Action"
+msgstr "လုပ်ဆောင်မူ"
+
+#: templates/updatedb.html:5
+msgid "Upload an excel file"
+msgstr "Excel fileကို တင်ပါ"
+
+#: templates/updatedb.html:6
+msgid "Excel file upload (csv, tsv, csvz, tsvz only)"
+msgstr ""
+
+#: templates/user.html:8
+msgid "Search"
+msgstr "ရှာရန်"
+
+#: templates/user.html:11
+msgid "Total Users - "
+msgstr "အသုံးပြုသူများ -  "
+
+#: templates/user.html:11
+msgid " Users"
+msgstr "ဦး"
+
+#: templates/user.html:20
+msgid "Credits"
+msgstr "လက်ကျန်ငွေ"
+
+#: templates/user.html:22
+msgid "Online Status"
+msgstr ""
+
+#: templates/userhome.html:9
+msgid "MeterID : "
+msgstr "မီတာ ID"
+
+#: templates/userhome.html:21
+msgid "Overdues : "
+msgstr "ပေးရန်ကျန်ငွေ"
+
+#: templates/userhome.html:25
+msgid "Balances : "
+msgstr "လက်ကျန်ငွေ"
+
+#: templates/userhome.html:32
+msgid "Your Info"
+msgstr "သင့်ရဲ့ သတင်းအချက်"
+
+#: templates/userhome.html:68
+msgid "Current Year Payment"
+msgstr "ယခုနှစ်ငွေပေးချေမှု "
+
+#: templates/userhome.html:73
+msgid "Month"
+msgstr "လ"
+
+#: templates/userhome.html:74
+msgid "Year"
+msgstr "ခုနှစ်"
+
+#: templates/userhome.html:75
+msgid "Amount"
+msgstr "ငွေပမာဏ"
+
+#: templates/userhome.html:97
+msgid "Total Electricity Usage of this Month"
+msgstr "ယခုလယူနစ်စုစုပေါင်း"
+
+#: templates/userhome.html:100
+msgid "Total Unit :"
+msgstr "ယူနစ်စုစုပေါင်း"
+
+#: templates/userhome.html:113
+msgid "Get Receipt"
+msgstr "ပြေစာရယူရန်"
+
+#: templates/view_topup.html:12
+msgid "Select Amount"
+msgstr "ငွေပမာဏရွေးရန်"
+
+#: templates/view_topup.html:19
+msgid "Generate New Topup Codes"
+msgstr " ငွေဖြည့်ရန်ကုဒ်အသစ်များရယူ"
+
+#: templates/view_topup.html:28
+msgid "Sold"
+msgstr "ရောင်းချခဲ့"
+
+#~ msgid "Dummy"
+#~ msgstr "အစမ်း"
+
+#~ msgid "Republic of the union of Myanmar"
+#~ msgstr "ပြည်ထောင်စုသမ္မတမြန်မာနိုင်ငံတော်"
+
+#~ msgid "Due"
+#~ msgstr "ပေးရန် ကျန်"
+
+#~ msgid "Status"
+#~ msgstr "အချက်အလက်"
+
+#~ msgid "Name"
+#~ msgstr "အမည်"
+

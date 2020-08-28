@@ -1,0 +1,204 @@
+{% extends "base.html" %}
+{% include "_modal2.html" %}
+{% block body %}
+<div class="container mainbd">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="container border shadow bguser p-3 mb-5">
+                <form>
+                    <h5 class="text-center">{{ _('Previous Month Payment Status') }}</h5>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="col-1">{{ _('No.') }}</th>
+                                    <th scope="col" class="col-5">{{ _('Username') }}</th>
+                                    <th scope="col" class="col-3">{{ _('Balance') }}</th>
+                                    <th scope="col" class="col-3">{{ _('Meter ID') }}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for p in adminhome['payment_status'] %}
+                                    <tr>
+                                        <th scope="row" class="col-1">{{ loop.index }}</th>
+                                        <td class="col-3">{{ p[0] }}</td>
+                                        <td class="col-3">{{ p[1] }}</td>
+                                        <td class="col-3">{{ p[2] }}</td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>    
+                </form>
+            </div>
+        </div>
+        <br>
+        <div class="col-sm-6">
+            <div class="container border shadow bguser p-3">
+                <form>
+                    <h5 class="text-center">{{ _('Admin Info') }}</h5>
+                    <hr>
+                    <div class="container" style="max-width: 90%;">
+                        <form>
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" id="username" value="{{ adminhome['username'] }}" disabled>
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" id="phone_no" value="{{ adminhome['phone_no'] }}" disabled>
+                                </div>
+                            </div>
+                        </form>
+                        <br>
+                        <div class="form-inline justify-content-center">						
+                            <input type="email" class="form-control inputwidth" id="email" value="{{ adminhome['email'] }}" disabled>
+                        </div>
+                        <br>
+                        <div class="form-inline justify-content-center">
+                            <textarea class="form-control inputwidth" rows="2" id="address" disabled>{{ adminhome['address'] }}</textarea>
+                        </div>
+                        <br>
+                        <div class="form-inline justify-content-center">	
+                            <input type="button" class="btn btn-outline-dark btnwidth" style="margin-right: 8px;" data-toggle="modal" data-target="#ModalCenter" id="#" value="{{ _('Change Password') }}">
+                            <input type="button" class="btn btn-outline-dark btnwidth" id="edit" value="{{ _('Edit') }}">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mainbd">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="container border shadow bguser p-3 mb-5">
+                <form>
+                    <h5 class="text-center">{{ _('Payment Overdue Status') }}</h5>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="col-1">{{ _('No.') }}</th>
+                                    <th scope="col" class="col-3">{{ _('Meter ID') }}</th>
+                                    <th scope="col" class="col-3">{{ _('Balance') }}</th> 
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for o in adminhome['overdues'] %}
+                                    <tr>
+                                        <th scope="row" class="col-1">{{ loop.index }}</th>
+                                        <td class="col-3">{{ o[1] }}</td>
+                                        <td class="col-3">{{ o[0] }}</td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>    
+                </form>
+            </div>
+        </div>
+        <br>
+        <div class="col-sm-6">
+            <div class="container border shadow bguser p-3">
+                <form>
+                    <h5 class="text-center">{{ _('Recent Activities') }}</h5>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="col-1">{{ _('No.') }}</th>
+                                    <th scope="col" class="col-5">{{ _('Activity') }}</th>
+                                    <th scope="col" class="col-3">{{ _('Date') }}</th>
+                                    <th scope="col" class="col-3">{{ _('Time') }}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for log in adminhome['logs'] %}
+                                    <tr>
+                                        <th scope="row" class="col-1">{{ loop.index }}</th>
+                                        <td class="col-3">{{ log[0] }}</td>
+                                        <td class="col-3">{{ log[1] }}</td>
+                                        <td class="col-3">{{ log[2] }}</td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>    
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('#edit').click(
+		function(){
+			if($('#edit').prop('value')=="{{ _('Edit') }}"){
+				$('#edit').val("Confirm");
+				$('#username').prop( "disabled", false );
+				$('#phone_no').prop( "disabled", false );
+				$('#address').prop( "disabled", false );
+			}
+			else if($('#edit').prop('value')=="{{ _('Confirm') }}"){
+				$('#edit').val("Edit");
+				edit_user([$('#username').val(),$('#phone_no').val(),$('#address').val(),$('#email').val()]);
+				$('#username').prop( "disabled", true );
+				$('#phone_no').prop( "disabled", true );
+				$('#address').prop( "disabled", true );
+			}
+		}
+	)
+	function edit_user(query)
+        {
+            $.ajax({
+                type: "POST",
+                url:"edit",
+                data:{username: query[0],phone_no:query[1],address:query[2],email:query[3]},
+                dataType: "json",
+                success:function(data)
+                {
+					$('#username').val(data.user_data[0]);
+					$('#phone_no').val(data.user_data[1]);
+					$('#address').val(data.user_data[2]);
+                }
+            });
+		}
+    $(document).ready(function() {
+		var messages = "{{ get_flashed_messages() }}";
+		
+    	if (typeof messages != 'undefined' && messages != '[]') {
+        	$("#myModal").modal('toggle');
+		};
+    });
+    function clean(){
+		$('#current_password').val("");
+		$('#new_password').val("");
+		$('#confirm_password').val("");
+		$("#ModalCenter").modal('toggle');
+	}
+    $('#change_password').click(
+        function(){
+            $.ajax({
+                type: "POST",
+                url:'/change_password',
+                data: {current_password:$('#current_password').val(),new_password:$('#new_password').val(),confirm_password:$('#confirm_password').val()},
+                dataType: 'json',
+                success: function(data){
+                    if(data.result=="wrong_password"){
+                        clean();
+                        $('#msg').text("{{ _('Password does not match') }}");
+                    }
+                    else if(data.result=="invalid_credential"){
+                        clean();
+                        $('#msg').text("{{ _('Invalid Credential') }}");
+                    }
+                    else if(data.result=="updated"){
+                        clean();
+                        $('#msg').text("{{ _('Password Successfully Updated') }}");
+                    }
+                    $("#myModal").modal('toggle');
+                }
+            });
+        }
+    );
+</script>
+{% endblock %}

@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% include "_modal2.html" %}
+{% block body %}
+<div class="container mainbd">
+    <h5>{{ _('Wallet Shop') }}</h5>
+    <br>
+    <div class="form-inline">
+        <div class="dropdown">
+            <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               {{ _('Select Wallet Amount') }} 
+            </button>
+            <div id="select_amount" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                {% for m in money %}
+                    <a class="dropdown-item" value="{{ m }}">{{ m }}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <table class="table table-striped text-center">
+            <thead>
+                <tr>
+                    <th>{{ _('Topup Code') }}</th>
+                    <th>{{ _('Money') }}</th>
+                    <th>{{ _('Action') }}</td>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>   
+    </div>
+</div>
+<script>
+    function get_topup(m){
+        $.ajax({
+            url:'/shop_topup',
+            data:{money:m},
+            dataType:'json',
+            success:function(data){
+                $("table tbody").empty();
+                for(t in data.get_topup){
+                    $('table tbody').append("<tr><td>"+data.get_topup[t][0]+"</td><td>"+data.get_topup[t][1]+
+                        "</td><td><a class='btn' style='cursor:pointer' onclick=buy_topup('"+data.get_topup[t][0]+"')>Buy</a></td></tr>");
+                }
+            }
+        })
+    }
+    $(document).ready(function(){
+        get_topup("");
+        $('#select_amount a').on('click', function(){
+            select_money = $(this).text();
+            get_topup(select_money);
+        });
+    });
+    function buy_topup(topup_id){
+        $.ajax({
+            url:'/buy_topup',
+            data:{topup_id:topup_id},
+            dataType:'json',
+            success:function(data){
+                $('#msg').text(data.success);
+                $('#myModal').modal('toggle');
+            }
+        })
+    }
+</script>
+{% endblock %}

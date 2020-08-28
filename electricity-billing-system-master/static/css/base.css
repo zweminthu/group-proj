@@ -1,0 +1,146 @@
+/* Main bg color */
+body {
+    background-color: #F2F2F2;
+}
+
+/* Searchbox css */
+.form-control:focus {
+    box-shadow: none;
+}
+.has-search .form-control {
+    padding-left: 2.375rem;
+    border-width: 0;
+    border-bottom-width: 1.5px;
+    border-radius: 0;
+    background-color: transparent;
+}
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+/* Button css */
+.btnwidth {
+    min-width: 80px;
+    max-width: 160px;
+}
+.btnlink {
+    color: #000000;
+    text-decoration: none !important;
+}
+.btnlink:hover {
+    color: #B7B7B7;
+}
+
+/* Body css */
+.mainbd {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /* position: absolute;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+/* Input css */
+.inputwidth {
+    min-width: 100%;
+}
+
+/* Link css */
+a {
+    text-decoration: none !important;
+    color: #000000;
+}
+a:hover {
+    color: #000000;
+}
+
+/* Navbar css */
+.navbox {
+    background-color: #FFFFFF;
+    /* opacity: 0.90; */
+    padding: 10px;
+    color: #000000;
+}
+.navbox a {
+    color: #000000;
+}
+.navbox a:hover {
+    color: #B7B7B7;
+}
+.burger {
+    color: #000000;
+}
+i:hover {
+    color: #B7B7B7;
+}
+
+/* MiniNoticeBoard css */
+.mininotice {
+    width: 100%;
+    color: #FFFFFF;
+    background-color: #0067B8;
+    padding: 12px;
+}
+
+.mininotice a {
+    color: #FFFFFF !important;
+}
+
+/* Table css */
+
+/* Table CSS for home page */
+.table-fixed tbody {
+    height: 150px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.table-fixed thead,
+.table-fixed tbody,
+.table-fixed tr,
+.table-fixed td,
+.table-fixed th {
+    display: block;
+}
+
+.table-fixed tbody td,
+.table-fixed tbody th,
+.table-fixed thead > tr > th {
+    float: left;
+    position: relative;
+
+    &::after {
+        content: '';
+        clear: both;
+        display: block;
+    }
+}
+
+/* Footer css */
+.footerbox {
+    background-color: #0067B8;
+    padding: 4px;
+    color: #FFFFFF;
+    flex-shrink: none;
+}
+.footerbox a {
+    color: #FFFFFF;
+}
+.footerbox a:hover {
+    text-decoration: underline !important;
+    color: #000000;
+}
+.horizonslide{
+    height: 300px !important;
+}

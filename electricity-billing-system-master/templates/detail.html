@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% include "_modal2.html" %}
+{% block body %}
+<div class="container mainbd">
+    <form class="form-inline d-flex justify-content-between">
+        <p>{{ _('Username : ') }}<span>{{ user[1] }}</span></p>
+        <p>{{ _('Email : ') }}<span>{{ user[2] }}</span></p>
+        <p>{{ _('Address : ') }}<span>{{ user[3] }}</span></p>
+        <p>{{ _('Balance : ') }}<span>{{ user[4] }}</span></p>
+    </form>
+    <br>
+    <h5>{{ _('Recent Activities') }}</h5>
+    <br>
+    <div class="container">
+        <table class="table table-striped text-center">
+            <thead>
+                <tr>
+                    <th>{{ _('No.') }}</th>
+                    <th>{{ _('Activity') }}</th>
+                    <th>{{ _('Date') }}</th>
+                    <td>{{ _('Time') }}</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for log in logs %}
+                <tr>
+                    <th scope="row" class="col-3">{{ loop.index }}</th>
+                    <td class="col-3">{{ log[0] }}</td>
+                    <td class="col-3">{{ log[1] }}</td>
+                    <td class="col-3">{{ log[2] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>   
+    </div>
+    <div class="form-inline d-flex justify-content-end p-3">
+        <input type="button" class="btn btn-outline-danger" style="margin-right: 8px;" id="delete_user" value="Delete User">
+        <input id="make_shop" type="button" class="btn btn-outline-danger" value="{{ _('Make Shop') }}">
+    </div>
+</div>
+<script>
+    $('#delete_user').click(
+        function(){
+            var answer = confirm('{{ _('Are you sure you want to delete this user?') }}');
+            if (answer)
+            {
+                $.ajax({
+                    type: "POST",
+                    url:"/delete",
+                    data:{customer_id:"{{ user[0] }}"},
+                    dataType: "json",
+                    success: function(data){
+                        window.location.replace("{{ url_for('user') }}");
+                    }
+                })
+            }
+        }
+    );
+    $('#make_shop').click(
+        function(){
+            $.ajax({
+                type: "POST",
+                url:'/make_shop',
+                data:{customer_id:"{{ user[0] }}",email:"{{ user[2] }}"},
+                dataType:'json',
+                success:function(data){
+                    $("#_modal").text(data.success);
+                    $('#click_me').click();
+                }
+            })
+        }
+    )
+</script>
+{% endblock %}

@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% include "_modal2.html" %}
+{% block body %}
+<div class="container mainbd">
+    <div class="container border p-3 bguser">
+        <h5>{{ _('Unit Per Charge') }}</h5>
+        <table class="table table-bordered text-center">
+            <thead>
+                <tr>
+                    <th>{{ _('No.') }}</th>
+                    <th colspan="2">{{ _('Defining Units and Cost') }}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{ _('1') }}.</td>
+                    <td>{{ _('1-30') }}</td>
+                    <td>{{ _('35 Ks') }}</td>
+                </tr>
+                <tr>
+                    <td>{{ _('2') }}.</td>
+                    <td>{{ _('31-50') }}</td>
+                    <td>{{ _('50 Ks') }}</td>
+                </tr>
+                <tr>
+                    <td>{{ _('3') }}.</td>
+                    <td>{{ _('51-75') }}</td>
+                    <td>{{ _('70 Ks') }}</td>
+                </tr>
+                <tr>
+                    <td>{{ _('4') }}.</td>
+                    <td>{{ _('76-100') }}</td>
+                    <td>{{ _('90 Ks') }}</td>
+                </tr>
+                <tr>
+                    <td>{{ _('5') }}.</td>
+                    <td>{{ _('101-150') }}</td>
+                    <td>{{ _('110 Ks') }}</td>
+                </tr>
+                <tr>
+                    <td>{{ _('6') }}.</td>
+                    <td>{{ _('151-200') }}</td>
+                    <td>{{ _('120 Ks') }}</td>
+                </tr>
+                <tr>
+                    <td>{{ _('7') }}.</td>
+                    <td>{{ _('201-more') }}</td>
+                    <td>{{ _('125 Ks') }}</td>
+                </tr>
+            </tbody>
+        </table>
+        <h5>{{ _('Top Up Options') }}</h5>
+        <table class="table table-bordered text-center">
+            <thead>
+                <tr>
+                    <th>{{ _('No.') }}</th>
+                    <th>{{ _('Available Top-up Amounts') }}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{ _('1') }}.</td>                    
+                    <td>{{ _('1000 Ks') }}</td>
+                </tr>
+                <tr>
+                    <td>{{ _('2') }}.</td>                   
+                    <td>{{ _('5000 Ks') }}</td>
+                </tr>
+                <tr>
+                    <td>{{ _('3') }}.</td>                    
+                    <td>{{ _('10,000 Ks') }}</td>
+                </tr>
+                <tr>
+                    <td>{{ _('4') }}.</td>                    
+                    <td>{{ _('50,000 Ks') }}</td>
+                </tr>
+                <tr>
+                    <td>{{ _('5') }}.</td>                    
+                    <td>{{ _('100,000 Ks') }}</td>
+                </tr>
+                <tr>
+                    <td>{{ _('6') }}.</td>                   
+                    <td>{{ _('500,000 Ks') }}</td>
+                </tr>
+                <tr>
+                    <td>{{ _('7') }}.</td>                    
+                    <td>{{ _('1,000,000 Ks') }}</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <div class="container border shadow p-3" style="max-width: 420px;">
+            <h4>{{ _('Calculator') }}</h4>
+            <hr>
+            <div class="container">
+                <input type="number" id="meterunit" class="form-control" placeholder="Enter Meter unit">
+            </div>
+            <div class="form-inline d-flex justify-content-end p-3">
+                <!-- <input type="submit" class="btn btn-outline-dark btnwidth" data-toggle="modal" data-target="#calModalCenter" value="Calculate"> -->
+                <button id="cal" class="btn btn-outline-dark btnwidth">{{ _('Calculate') }}</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('#cal').click(
+        function(){
+            $.ajax({
+                type: "POST",
+                url: "/cal",
+                data: {meterunit:$('#meterunit').val()},
+                dataType: 'json',
+                success: function(data){
+                    $('#msg').append("Meter Bill is: "+data.bill)
+                    $('#myModal').modal('toggle');
+                }
+            })
+        }
+    )
+</script>
+{% endblock %}

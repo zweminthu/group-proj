@@ -1,0 +1,228 @@
+{% extends "base.html" %}
+{% include "_modal2.html" %}
+{% block body %}
+<div class="container mainbd">
+    <h5>{{ _('About Us') }}</h5>
+    <p>{{ _('Thank you for using our Electricity Billing System. Our system is designed to enable your feel 
+        free to manage electricity supply and billing from our system to collect and control all utility 
+        materials such as Pole, Meter and Phone as well. ') }}</p>
+    <div class="card mb-3" style="background-color: transparent;">
+        <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner horizonslide">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="../static/images/1.jpg" alt="First slide">                
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../static/images/2.jpg" alt="Second slide">                
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../static/images/3.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">{{ _('Previous') }}</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">{{ _('Next') }}</span>
+            </a>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">{{ _('Is the system helpful for modern society?') }}</h5>
+            <p class="card-text">{{ _('Smoother and easier payment processes for electricity billing.
+                More systematic data storage and processing styles plus easy to configure the database.
+                More accurate in electricity bill calculation.Save money for transportation and time.
+                Produce consistent invoices after transaction.') }}</p>
+        </div>
+    </div>
+    <div class="card-group">
+        <div class="card" style="background-color: transparent;">
+            <img src="../static/images/about2.gif" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{ _('Objective Views') }}</h5>
+                <p class="card-text">{{ _('From the objective view, electricity billing system is 
+                    to be able to manage the electricity, maintain the connections and store 
+                    electricity bill and keep all the information of customers.') }}</p>
+            </div>
+        </div>
+        <div class="card" style="background-color: transparent;">
+            <img src="../static/images/about3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{ _('System') }}</h5>
+                <p class="card-text">{{ _('The process of electricity billing system automates the 
+                    traditional transaction process, calculates the charges of electricity bill and 
+                    evaluates the penalties and charges for customers who has been in an electricity connection.') }}</p>
+            </div>
+        </div>
+        <div class="card" style="background-color: transparent;">
+            <img src="../static/images/about4.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{ _('Offer') }}</h5>
+                <p class="card-text">{{ _('We have tried to do as much as the work for you, through 
+                    the design, payment processor combination and etc.') }}</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div id="feedback" class="container border p-3">
+        <h5>{{ _('Customer Service Survey') }}</h5>
+        <span>{{ _('Please take a moment to fill out this survey') }}</span>
+        <hr>
+        <h5>{{ _('Overall satisfaction of service') }}</h5>       
+        <table class="table table-responsive table-borderless text-center" style="margin: 0 auto;">
+            <thead>
+                <th></th>
+                <th>{{ _('Very Satisfied') }}</th>
+                <th>{{ _('Satisfied') }}</th>
+                <th>{{ _('Neutral') }}</th>
+                <th>{{ _('Unsatisfied') }}</th>
+                <th>{{ _('Very Unsatisfied') }}</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{ _('Friendliness') }}</td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Radios1" id="Radios1" value="{{ _('Very Satisfied') }}" checked>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Radios1" id="Radios2" value="{{ _('Satisfied') }}">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Radios1" id="Radios3" value="{{ _('Neutral') }}">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Radios1" id="Radios4" value="{{ _('Unsatisfied') }}">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Radios1" id="Radios5" value="{{ _('Very Unsatisfied') }}">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>{{ _('Accuracy') }}</td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Radios2" id="Radios1" value="{{ _('Very Satisfied') }}" checked>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Radios2" id="Radios2" value="{{ _('Satisfied') }}">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Radios2" id="Radios3" value="{{ _('Neutral') }}">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Radios2" id="Radios4" value="{{ _('Unsatisfied') }}">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Radios2" id="Radios5" value="{{ _('Very Unsatisfied') }}">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>{{ _('Usefulness') }}</td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Radios3" id="Radios1" value="{{ _('Very Satisfied') }}" checked>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Radios3" id="Radios2" value="{{ _('Satisfied') }}">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Radios3" id="Radios3" value="{{ _('Neutral') }}">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Radios3" id="Radios4" value="{{ _('Unsatisfied') }}">
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="Radios3" id="Radios5" value="{{ _('Very Unsatisfied') }}">
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <h5>{{ _('Would you use our customer service in the future?') }}</h5>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="Radios4" id="Radios6" value="{{ _('Yes') }}" checked>
+            <label class="form-check-label" for="Radios6">
+                {{ _('Yes') }}
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="Radios4" id="Radios7" value="{{ _('No') }}">
+            <label class="form-check-label" for="Radios7">
+                {{ _('No') }}   
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="Radios4" id="Radios8" value="{{ _('Maybe') }}">
+            <label class="form-check-label" for="Radios8">
+                {{ _('Maybe') }}  
+            </label>
+        </div>
+        <br> 
+        <h5>{{ _('How can we improve our service?') }}</h5>
+        <input class="form-control" type="text" rows="6" id="sug_subject" placeholder="{{ _('Feedback Content') }}"><br/>
+        <textarea class="form-control" rows="6" id="suggestions" placeholder="{{ _('Let us know what you want ...') }}"></textarea>
+        <div class="form-inline d-flex justify-content-end mt-3">
+            <input type="button" class="btn btn-outline-dark btnwidth" id="sendfeedback" value="{{ _('Send') }}">
+        </div>
+    </div>
+</div>
+<script>
+    $('#sendfeedback').click(function(){
+        var friendliness = $("input[name='Radios1']:checked").val();
+        var accuracy = $("input[name='Radios2']:checked").val();
+        var usefulness = $("input[name='Radios3']:checked").val();
+        var use_in_future = $("input[name='Radios4']:checked").val();
+        $.ajax({
+            type: 'POST',
+            url:'/send_feedback',
+            data:{friendliness:friendliness,accuracy:accuracy,usefulness:usefulness,use_in_future:use_in_future,
+                sug_subject:$('#sug_subject').val(),suggestions:$('#suggestions').val()},
+            dataType:'json',
+            success:function(data){
+                $('#sug_subject').val("");
+                $('#suggestions').val("");
+                $("input[name='Radios1'][id='Radios1']").prop("checked",true)
+                $("input[name='Radios2'][id='Radios1']").prop("checked",true)
+                $("input[name='Radios3'][id='Radios1']").prop("checked",true)
+                $("input[name='Radios4'][id='Radios6']").prop("checked",true)
+                $('#msg').text(data.success);
+                $('#myModal').modal('toggle');
+            }
+        })
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="container mainbd">
+    <h5>{{ _('Terms & Conditions') }}</h5>
+    <div class="container bguser border p-3">
+        <div class="text-center">
+            <h5>{{ _('THE ELECTRICITY ACT 2014') }}</h5>
+            <hr>
+            <p>{{ _('Electricity Law 2014,') }}</p>              
+            <p>{{ _('2014, Pyidaungsu Hluttaw Law No. (44)') }}</p>  
+            <p>{{ _('1376, Tazaungmon, Day 5') }}</p>             
+            <p>{{ _('2014, October, Day 27') }}</p> 
+        </div>   
+        <div class="container p-3">    
+            <h5>{{ _('Electric power rates and service charges') }}</h5>
+            <p><span>{{ _('1') }}. </span>{{ _('The relevant ministry shall, with the consent of the Union government, have the right to fix suitable electric power rates that are to be charged to the power consumer according to the region. The electric power rate may be changed from time to time.') }}</p>             
+            <p><span>{{ _('2') }}. </span>{{ _('The governments of the regions, states, self-administered zones and self-administered divisions shall have the right to fix, after consultation with the relevant ministry, suitable electric power rates that are to be charged for electric power under their own management that is not acquired from the national grid the electric power rate may be changed from time to time.')}}</p>
+            <hr>
+            <h5>{{ _('Administrative actions') }}</h5>          
+            <p>{{ _('The persons with the authority to issue a license to engage in electricity-related work under section 8 shall have the right to take any of the following administrative actions if the license holder breaches the conditions contained in the license or any order or directive issued by the relevant ministry or is convicted of having committed any offence under this law-') }}</p>
+            <span>{{ _('(a) Levying of a fine') }}</span><br>  
+            <span>{{ _('(b) Suspension, for a limited time, of the license to engage in electricity-related work;') }}</span><br>  
+            <span>{{ _('(c) Revocation of the license to engage in electricity-related work.') }}</span><br> 
+            <hr>
+            <h5>{{ _('Offences and penalties') }}</h5> 
+            <p>{{ _('Anyone convicted of having violated the prohibition under section shall be punished with a fine from minimum kyats 100,000 to maximum kyats 500,000. If, after having been punished in this way, he is convicted of having continued to commit the offence, he shall additionally be punished with imprisonment from minimum 1 year to maximum 3 years.') }}</p>  
+            <p>{{ _('Any holder of a license to engage in electricity-related work convicted of having violated the prohibition under section 36 shall be punished with a fine from minimum kyats 100,000 to maximum kyats 500,000. If, after having been punished in this way, he is convicted of having continued to commit the offence, he shall additionally be punished with imprisonment from minimum 1 year to maximum 3 years.') }}</p> 
+            <div>
+                <span>{{ _('Mr. Thein Sein') }}</span> 
+                <span>{{ _('Republic of the Union Myanmar') }}</span> 
+            </div>
+            <hr>
+            <h5>{{ _('Rules and Regulation of using electricity billing system') }}</h5>
+            <br>  
+            <h6>{{ _("Applicable Laws") }}</h6>
+            <div class="container d-flex flex-column">
+                <span>{{ _('1') }}. {{ _('Data Protection Act 1998') }}</span>
+                <span>{{ _('2') }}. {{ _('Copyright, Designs & Patents Act 1988') }}</span> 
+                <span>{{ _("3") }}. {{ _("Computer Misuse Act 1990") }}</span>
+            </div>
+            <br>
+            <h6>{{ _('Regulations and Laws') }}</h6>
+            <div class="container d-flex flex-column">
+            <span>{{ _('These regulations apply subject to and in addition to the law. In all cases involving a breach of the law, legal sanctions may apply.') }}</span> 
+            </div> 
+            <br>
+            <h6>{{ _('Wallet Balance – Limits') }}</h6> 
+            <div class="container d-flex flex-column">
+                <span>{{ _('Minimum amount – 1000ks must left in the wallet’s balance') }}</span>  
+                <span>{{ _('Maximum amount – unlimited') }}</span>
+            </div>
+            <br> 
+            <h6>{{ _('Overdue – Charges') }}</h6> 
+            <div class="container d-flex flex-column">
+                <span>{{ _('Late charges 2000ks/day') }}</span>
+            </div> 
+        </div>            
+    </div>
+</div>
+{% endblock %}
